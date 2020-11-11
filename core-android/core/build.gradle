@@ -18,13 +18,17 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            android.libraryVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "${ARTIFACT_ID}-release.aar"
+                }
+            }
         }
     }
 
     testOptions {
         unitTests.includeAndroidResources = true
     }
-
 }
 
 dependencies {
@@ -37,7 +41,7 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:${rootProject.ext.espresso}"
 
     implementation project(":wrapper")
-    
+
     api "com.google.code.gson:gson:$gson_version"
     api "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
     implementation "androidx.recyclerview:recyclerview:$recycleview_version"
