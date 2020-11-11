@@ -1,0 +1,34 @@
+{
+    "dbl": {
+        "meta": {
+            "eventOn": "eventOn",
+            "eventCbMsg": "eventCbMsg",
+            "bgImg":"https://static.didialift.com/pinche/gift/resource/a1btha00uvo-1596181723746-db_progress_bg_01.9.png",
+            "fgImg":"https://static.didialift.com/pinche/gift/resource/pubvqug1brg-1596181817219-db_progress_fg_01.9.png",
+        },
+        "onEvent": {
+            "eid": "1000",
+            "msgTo": "eventOn",
+            "toast": {
+                "src": "${eventOn}"
+            }
+        },
+        "render": [
+            {
+                "id": "12",
+                "leftToLeft": "0",
+                "topToTop": "0",
+                "width": "250",
+                "height": "20dp",
+                "marginLeft": "50dp",
+                "marginTop": "50dp",
+                "type": "progress",
+                "value":"80",
+                "barBg":"${bgImg}",
+                "barFg":"${fgImg}",
+                "patchType":"repeat",
+                "radius":"4"
+            }
+        ]
+    }
+}

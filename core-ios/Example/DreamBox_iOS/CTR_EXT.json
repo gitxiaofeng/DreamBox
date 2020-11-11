@@ -1,0 +1,423 @@
+{
+    dbl =     {
+        A =         (
+                        {
+                C = 1;
+                D = 0;
+                E = 0;
+                a = view;
+                d = 100dp;
+                e = 20dp;
+            },
+                        {
+                C = 2;
+                D = 0;
+                G = 1;
+                H = 12dp;
+                I = "#FF0000";
+                K = bold;
+                L = "#FF9876";
+                M =                 {
+                    N =                     {
+                        O = Title;
+                        P = yes;
+                        Q = no;
+                        R =                         {
+                            p =                             {
+                                q = "I am dialog positive button";
+                                r = false;
+                            };
+                        };
+                        S =                         {
+                            p =                             {
+                                q = "I am dialog negative button";
+                                r = false;
+                            };
+                        };
+                        h = "I'm a dialog";
+                    };
+                    g =                     {
+                        h = "I am text onClick";
+                        i = d;
+                        k = TEST;
+                    };
+                };
+                a = text;
+                d = 100dp;
+                e = 40dp;
+                q = "${pool.testGlobal}";
+            },
+                        {
+                C = 3;
+                G = 1;
+                H = 12dp;
+                I = "#00FF00";
+                K = bold;
+                L = "#FF9876";
+                M =                 {
+                    l =                     {
+                        m = "http://www.get-some-json-back.com";
+                        n = json;
+                        o =                         {
+                            p =                             {
+                                q = "net onsuccess";
+                                r = true;
+                            };
+                        };
+                        s =                         {
+                            p =                             {
+                                q = "net onerror";
+                            };
+                        };
+                    };
+                };
+                T = 2;
+                U = 0;
+                V = 5dp;
+                a = text;
+                d = 0dp;
+                e = 40dp;
+                q = "${netTest}";
+            },
+                        {
+                C = 4;
+                D = 0;
+                G = 2;
+                H = 12dp;
+                I = "#0000FF";
+                K = bold;
+                M =                 {
+                    Y =                     {
+                        aa = 100;
+                        v = "cache_num";
+                    };
+                    ba =                     {
+                        ca = "https://www.baidu.com";
+                        o =                         {
+                            p =                             {
+                                q = "nav onsuccess";
+                                r = false;
+                            };
+                        };
+                        s =                         {
+                            p =                             {
+                                q = "nav onsuccess";
+                            };
+                        };
+                    };
+                };
+                X = 10dp;
+                a = button;
+                d = 100dp;
+                e = 40dp;
+                q = "${navTest}";
+            },
+                        {
+                C = 5;
+                G = 3;
+                H = 12dp;
+                I = "#00FF00";
+                K = bold;
+                L = "#FF9876";
+                M =                 {
+                    da =                     (
+                                                {
+                            v = imageVisible;
+                            y = true;
+                        },
+                                                {
+                            v = loadingVisible;
+                            y = true;
+                        }
+                    );
+                };
+                T = 4;
+                V = 5dp;
+                X = 10dp;
+                a = button;
+                d = 140dp;
+                e = 40dp;
+                q = "changeMeta true";
+            },
+                        {
+                G = 3;
+                H = 12dp;
+                I = "#00FF00";
+                K = bold;
+                L = "#FF9876";
+                M =                 {
+                    da =                     (
+                                                {
+                            v = imageVisible;
+                            y = false;
+                        },
+                                                {
+                            v = loadingVisible;
+                            y = false;
+                        }
+                    );
+                };
+                T = 5;
+                V = 5dp;
+                X = 10dp;
+                a = button;
+                d = 140dp;
+                e = 40dp;
+                q = "changeMeta false";
+            },
+                        {
+                C = 6;
+                D = 0;
+                G = 4;
+                H = 12dp;
+                I = "#00FF00";
+                K = bold;
+                L = "#FF9876";
+                M =                 {
+                    g =                     (
+                                                {
+                            h = "I am text onClick1";
+                            i = d;
+                            k = TEST;
+                        },
+                                                {
+                            h = "I am text onClick2";
+                            i = d;
+                            k = TEST;
+                        }
+                    );
+                };
+                X = 5dp;
+                a = text;
+                d = 160dp;
+                e = 40dp;
+                q = "log\U6d4b\U8bd5";
+            },
+                        {
+                G = 5;
+                K = dot;
+                T = 6;
+                V = 20dp;
+                X = 10dp;
+                a = loading;
+                d = 160dp;
+                e = 80dp;
+                fa = loadingVisible;
+            },
+                        {
+                D = 0;
+                G = 6;
+                M =                 {
+                    g =                     {
+                        h = "I am image onClick";
+                        i = d;
+                        k = TEST;
+                    };
+                    ha =                     {
+                        ia = "id_123";
+                        q = "${person.zhangsan}";
+                    };
+                };
+                X = 10dp;
+                a = image;
+                d = 100dp;
+                e = 100dp;
+                fa = imageVisible;
+                q = "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=2007348240,921224949&amp;fm=74&amp;app=80&amp;f=JPEG&amp;size=f121,90?sec=1880279984&amp;t=b35e463135347add61aca95427a4dc75";
+            },
+                        {
+                a = list;
+                la = "list_response";
+                ma = true;
+                na = true;
+                oa = 0;
+                pa =                 {
+                    g =                     {
+                        h = "list onPull";
+                        i = d;
+                        k = TEST;
+                    };
+                };
+                q = "${list_response[students]}";
+                qa =                 {
+                    g =                     {
+                        h = "list onPull";
+                        i = d;
+                        k = TEST;
+                    };
+                };
+                ra =                 {
+                    F =                     (
+                                                {
+                            a = text;
+                            q = "${name}";
+                        },
+                                                {
+                            a = text;
+                            q = "${age}";
+                        }
+                    );
+                };
+            }
+        );
+        c = view;
+        d = fill;
+        e = fill;
+        f =         {
+            g =             {
+                h = "dbl visible";
+                i = i;
+                k = TEST;
+            };
+            l =             {
+                m = "http://192.168.1.103:8081/dreambox?action=1";
+                n = "list_response";
+                o =                 {
+                    p =                     {
+                        q = "net onsuccess";
+                        r = true;
+                    };
+                };
+                s =                 {
+                    p =                     {
+                        q = "net onerror";
+                    };
+                };
+            };
+        };
+        sa =         (
+                        {
+                C = "id_123";
+                p =                 {
+                    q = "${name}";
+                    r = false;
+                };
+                q = "${person.zhangsan}";
+            },
+                        {
+                C = "id_456";
+                l =                 {
+                    m = "http://www.get-some-json-back.com";
+                    n = json;
+                    o =                     {
+                        g =                         {
+                            h = "net onsuccess";
+                            i = i;
+                            k = Test;
+                        };
+                    };
+                    s =                     {
+                        g =                         {
+                            h = "net onerror";
+                            i = i;
+                            k = Test;
+                        };
+                    };
+                };
+                p =                 {
+                    q = "${name}";
+                    r = false;
+                };
+                q = "${person.wangwu}";
+            }
+        );
+        t =         {
+            u =             {
+                v = "key_trace";
+                w = "${traceEnable}";
+                x =                 (
+                                        {
+                        v = uid;
+                        y = "${uid}";
+                    },
+                                        {
+                        v = oid;
+                        y = "${oid}";
+                    }
+                );
+            };
+        };
+        z =         {
+            dialogTest = "\U5bf9\U8bdd\U6846\U6d4b\U8bd5";
+            imageVisible = false;
+            "list_response" = null;
+            loadingVisible = false;
+            navTest = "nav\U6d4b\U8bd5";
+            netTest = "net\U6d4b\U8bd5";
+            oid = 10000098765;
+            person = null;
+            traceEnable = true;
+            traceOnVisible = true;
+            uid = 12345678;
+        };
+    };
+    map =     {
+        A = render;
+        B = view;
+        C = id;
+        D = leftToLeft;
+        E = topToTop;
+        F = text;
+        G = topToBottom;
+        H = size;
+        I = color;
+        K = style;
+        L = backgroundColor;
+        M = onClick;
+        N = dialog;
+        O = title;
+        P = positiveBtn;
+        Q = negativeBtn;
+        R = onPositive;
+        S = onNegative;
+        T = leftToRight;
+        U = rightToRight;
+        V = marginLeft;
+        W = button;
+        X = marginTop;
+        Y = cache;
+        a = type;
+        aa = write;
+        b = dbl;
+        ba = nav;
+        c = displayType;
+        ca = schema;
+        d = width;
+        da = "changeMeta";
+        e = height;
+        ea = loading;
+        f = onVisible;
+        fa = visibleOn;
+        g = log;
+        ga = image;
+        h = msg;
+        ha = invoke;
+        i = level;
+        ia = alias;
+        k = tag;
+        ka = list;
+        l = net;
+        la = changeOn;
+        m = url;
+        ma = pullRefresh;
+        n = to;
+        na = loadMore;
+        o = onSuccess;
+        oa = pageIndex;
+        p = toast;
+        pa = onPull;
+        q = src;
+        qa = onMore;
+        r = long;
+        ra = vh;
+        s = onError;
+        sa = "actionAlias";
+        t = onInvisible;
+        u = trace;
+        v = key;
+        w = dependOn;
+        x = attr;
+        y = value;
+        z = meta;
+    };
+}

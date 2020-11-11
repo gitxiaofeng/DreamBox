@@ -1,0 +1,41 @@
+{
+ "dbl": {
+  "meta": {
+   "eventData": {
+    "testData": "[N TO D] \u8ba1\u6570"
+   }
+  },
+  "onEvent": {
+   "eid": "1000",
+   "msgTo": "eventData",
+   "actions": [
+       {
+           "toast": {
+            "src": "${eventData.toast}"
+           }
+       }
+   ]
+  },
+  "render": [
+   {
+    "marginLeft": "5dp",
+    "marginTop": "50dp",
+    "src": "[N TO D] \u8ba1\u6570\u6d4b\u8bd5",
+    "type": "text",
+    "id": "1",
+    "leftToLeft": "0",
+    "topToTop": "0"
+   },
+   {
+    "changeOn": "eventData",
+    "size": "20dp",
+    "src": "${eventData.testData}",
+    "type": "text",
+    "bottomToBottom": "0",
+    "leftToLeft": "0",
+    "rightToRight": "0",
+    "topToTop": "0"
+   }
+  ]
+ }
+}
