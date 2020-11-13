@@ -1,0 +1,1407 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>最佳实践系列-事件管道的应用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../feedback.html" />
+    
+    
+    <link rel="prev" href="meta.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    DreamBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../use/">
+            
+                <a href="../use/">
+            
+                    
+                    接入与调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../use/environment.html">
+            
+                <a href="../use/environment.html">
+            
+                    
+                    环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    CLI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../use/cli/">
+            
+                <a href="../use/cli/">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../use/cli/ext.html">
+            
+                <a href="../use/cli/ext.html">
+            
+                    
+                    扩展配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../use/start.html">
+            
+                <a href="../use/start.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../use/playground.html">
+            
+                <a href="../use/playground.html">
+            
+                    
+                    Playground
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../use/catalog.html">
+            
+                <a href="../use/catalog.html">
+            
+                    
+                    Catalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../use/api_doc.html">
+            
+                <a href="../use/api_doc.html">
+            
+                    
+                    API说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../use/use_wrapper.html">
+            
+                <a href="../use/use_wrapper.html">
+            
+                    
+                    实现自己的wrapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../use/debug_tool_in_project.html">
+            
+                <a href="../use/debug_tool_in_project.html">
+            
+                    
+                    集成调试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../use/which_is_dbview.html">
+            
+                <a href="../use/which_is_dbview.html">
+            
+                    
+                    特征识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../use/publish_recommand.html">
+            
+                <a href="../use/publish_recommand.html">
+            
+                    
+                    发布方案建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../dsl/changelog.html">
+            
+                <a href="../dsl/changelog.html">
+            
+                    
+                    DSL开发手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../dsl/write_a_dsl.html">
+            
+                <a href="../dsl/write_a_dsl.html">
+            
+                    
+                    如何编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../dsl/root.html">
+            
+                <a href="../dsl/root.html">
+            
+                    
+                    根节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../dsl/meta.html">
+            
+                <a href="../dsl/meta.html">
+            
+                    
+                    元数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../dsl/layout_logic.html">
+            
+                <a href="../dsl/layout_logic.html">
+            
+                    
+                    布局逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../dsl/ui/base.html">
+            
+                <a href="../dsl/ui/base.html">
+            
+                    
+                    视图节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../dsl/ui/base.html">
+            
+                <a href="../dsl/ui/base.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../dsl/ui/text.html">
+            
+                <a href="../dsl/ui/text.html">
+            
+                    
+                    文字——text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../dsl/ui/image.html">
+            
+                <a href="../dsl/ui/image.html">
+            
+                    
+                    图片——image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../dsl/ui/view.html">
+            
+                <a href="../dsl/ui/view.html">
+            
+                    
+                    占位——view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../dsl/ui/loading.html">
+            
+                <a href="../dsl/ui/loading.html">
+            
+                    
+                    加载——loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../dsl/ui/progress.html">
+            
+                <a href="../dsl/ui/progress.html">
+            
+                    
+                    进度条——progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../dsl/ui/list.html">
+            
+                <a href="../dsl/ui/list.html">
+            
+                    
+                    列表——list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../dsl/ui/flow.html">
+            
+                <a href="../dsl/ui/flow.html">
+            
+                    
+                    流式布局——flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../dsl/func/base.html">
+            
+                <a href="../dsl/func/base.html">
+            
+                    
+                    动作节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../dsl/func/base.html">
+            
+                <a href="../dsl/func/base.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../dsl/func/log.html">
+            
+                <a href="../dsl/func/log.html">
+            
+                    
+                    日志——log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../dsl/func/net.html">
+            
+                <a href="../dsl/func/net.html">
+            
+                    
+                    网络——net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../dsl/func/trace.html">
+            
+                <a href="../dsl/func/trace.html">
+            
+                    
+                    埋点——trace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../dsl/func/nav.html">
+            
+                <a href="../dsl/func/nav.html">
+            
+                    
+                    跳转——nav
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../dsl/func/storage.html">
+            
+                <a href="../dsl/func/storage.html">
+            
+                    
+                    持久化缓存——storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../dsl/func/changeMeta.html">
+            
+                <a href="../dsl/func/changeMeta.html">
+            
+                    
+                    数据变更——changeMeta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="../dsl/func/dialog.html">
+            
+                <a href="../dsl/func/dialog.html">
+            
+                    
+                    Dialog弹窗——dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="../dsl/func/toast.html">
+            
+                <a href="../dsl/func/toast.html">
+            
+                    
+                    自消失提示——toast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="../dsl/func/actionAlias.html">
+            
+                <a href="../dsl/func/actionAlias.html">
+            
+                    
+                    动作领域——actionAlias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.11" data-path="../dsl/func/invoke.html">
+            
+                <a href="../dsl/func/invoke.html">
+            
+                    
+                    执行动作——invoke
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.12" data-path="../dsl/func/closePage.html">
+            
+                <a href="../dsl/func/closePage.html">
+            
+                    
+                    关闭页面——closePage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../extension/">
+            
+                <a href="../extension/">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../extension/event/event_pipe.html">
+            
+                <a href="../extension/event/event_pipe.html">
+            
+                    
+                    事件管道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../extension/event/event_android.html">
+            
+                <a href="../extension/event/event_android.html">
+            
+                    
+                    android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../extension/event/event_ios.html">
+            
+                <a href="../extension/event/event_ios.html">
+            
+                    
+                    ios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../extension/android/create_ui_extension_01.html">
+            
+                <a href="../extension/android/create_ui_extension_01.html">
+            
+                    
+                    扩展UI标签-入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../extension/android/create_ui_extension_02.html">
+            
+                <a href="../extension/android/create_ui_extension_02.html">
+            
+                    
+                    扩展UI标签-进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../extension/android/create_action_extension_01.html">
+            
+                <a href="../extension/android/create_action_extension_01.html">
+            
+                    
+                    扩展动作标签-入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../extension/android/create_action_extension_02.html">
+            
+                <a href="../extension/android/create_action_extension_02.html">
+            
+                    
+                    扩展动作标签-进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    ios
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../extension/ios/ios_ui_extension.html">
+            
+                <a href="../extension/ios/ios_ui_extension.html">
+            
+                    
+                    扩展UI标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../extension/ios/ios_action_extension.html">
+            
+                <a href="../extension/ios/ios_action_extension.html">
+            
+                    
+                    扩展动作标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../extension/use_extension.md">
+            
+                <span>
+            
+                    
+                    使用已有扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    工作原理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../design/base.html">
+            
+                <a href="../design/base.html">
+            
+                    
+                    设计理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../design/data.html">
+            
+                <a href="../design/data.html">
+            
+                    
+                    数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../design/cli.html">
+            
+                <a href="../design/cli.html">
+            
+                    
+                    编译逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="meta.html">
+            
+                <a href="meta.html">
+            
+                    
+                    最佳实践系列-数据的复杂用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    最佳实践系列-事件管道的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../feedback.html">
+            
+                <a href="../feedback.html">
+            
+                    
+                    反馈渠道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >最佳实践系列-事件管道的应用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="1-&#x4EC0;&#x4E48;&#x662F;&#x4E8B;&#x4EF6;&#x7BA1;&#x9053;">1. &#x4EC0;&#x4E48;&#x662F;&#x4E8B;&#x4EF6;&#x7BA1;&#x9053;</h2>
+<p>&#x672C;&#x6587;&#x7AE0;&#x8BB2;&#x8FF0;&#x4E86;<code>DreamBox</code>&#x4E8B;&#x4EF6;&#x7BA1;&#x9053;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x9605;&#x8BFB;&#x524D;&#x9700;&#x8981;&#x5BF9;<code>DreamBox</code>&#x6709;&#x57FA;&#x672C;&#x4E86;&#x89E3;</p>
+<h3 id="11-&#x6982;&#x5FF5;">1.1 &#x6982;&#x5FF5;</h3>
+<p>&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x4F7F;&#x7528;<code>DreamBox</code>&#x65F6;&#xFF0C;&#x6709;&#x4E9B;&#x903B;&#x8F91;&#x7684;&#x5904;&#x7406;&#x9700;&#x8981;&#x5728;native&#x73AF;&#x5883;&#x91CC;&#x5B9E;&#x73B0;&#xFF0C;&#x5904;&#x7406;&#x5B8C;&#x7684;&#x7ED3;&#x679C;&#x9700;&#x8981;&#x518D;&#x4F20;&#x9012;&#x7ED9;<code>DreamBox</code>&#x3002;&#x6B64;&#x65F6;&#x5728;<code>DreamBox</code>&#x548C;<code>native</code>&#x4E4B;&#x95F4;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x673A;&#x5236;&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x901A;&#x8BAF;&#x80FD;&#x529B;&#xFF0C;&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x5728;DreamBox&#x91CC;&#x5C31;&#x662F; <a href="TODO%20github%20page">&#x4E8B;&#x4EF6;&#x7BA1;&#x9053;</a>&#x3002;</p>
+<p>&#x76EE;&#x524D;&#x5E38;&#x7528;&#x7684;&#x8DE8;&#x7AEF;&#x5B9E;&#x73B0;&#x65B9;&#x6848;H5&#x3001;weex&#x3001;RN&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x4EE5;&#x548C;native&#x53CC;&#x5411;&#x901A;&#x4FE1;&#x7684;&#x80FD;&#x529B;&#x3002;</p>
+<h3 id="12-&#x4F7F;&#x7528;&#x573A;&#x666F;">1.2 &#x4F7F;&#x7528;&#x573A;&#x666F;</h3>
+<p>&#x4E3E;&#x51E0;&#x4E2A;&#x5178;&#x578B;&#x573A;&#x666F;&#x7684;case&#xFF0C;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x4E2D;&#x53EF;&#x6839;&#x636E;&#x9700;&#x8981;&#x7075;&#x6D3B;&#x4F7F;&#x7528;&#xFF1A;</p>
+<ol>
+<li>PopupWindow&#x91CC;&#x91C7;&#x7528;DreamBox&#x5B9E;&#x73B0;&#x5F39;&#x7A97;&#xFF0C;&#x70B9;&#x51FB;DreamBox&#x754C;&#x9762;&#x91CC;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5173;&#x95ED;PopupWindow&#x5F39;&#x7A97;</li>
+<li>&#x9875;&#x9762;&#x91C7;&#x7528;Native&#x548C;DreamBox&#x6DF7;&#x5408;&#x5E03;&#x5C40;&#xFF0C;&#x70B9;&#x51FB;DreamBox&#x754C;&#x9762;&#x91CC;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x6216;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6267;&#x884C;1&#x81F3;&#x591A;&#x4E2A;Action<ul>
+<li>&#x6267;&#x884C;DreamBox&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x7684;Action&#xFF0C;&#x4F8B;&#xFF1A;&#x8BF7;&#x6C42;&#x7F51;&#x7EDC;&#x3001;&#x4E0A;&#x62A5;&#x57CB;&#x70B9;&#x3001;&#x5B58;&#x50A8;KV&#x7B49;</li>
+<li>&#x6267;&#x884C;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x5DF1;&#x6269;&#x5C55;&#x7684;Action</li>
+</ul>
+</li>
+<li>&#x9875;&#x9762;&#x91C7;&#x7528;Native&#x548C;DreamBox&#x6DF7;&#x5408;&#x5E03;&#x5C40;&#xFF0C;&#x70B9;&#x51FB;Native&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x6216;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#xFF0C;&#x5237;&#x65B0;DreamBox&#x6574;&#x4E2A;&#x9875;&#x9762;&#x6216;&#x9875;&#x9762;&#x91CC;&#x67D0;&#x4E2A;UI&#x7EC4;&#x4EF6;</li>
+</ol>
+<h2 id="2-&#x5982;&#x4F55;&#x4F7F;&#x7528;">2. &#x5982;&#x4F55;&#x4F7F;&#x7528;</h2>
+<p>&#x4E0B;&#x9762;&#x901A;&#x8FC7;&#x793A;&#x4F8B;&#x6765;&#x8BF4;&#x660E;&#x4E0B;<code>&#x4E8B;&#x4EF6;&#x7BA1;&#x9053;</code>&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x793A;&#x4F8B;:</p>
+<ul>
+<li><a href="https://static.didialift.com/pinche/gift/resource/75ct43r4o28-1600680539525-DBEventDemo.zip" target="_blank">Android &#x5DE5;&#x7A0B;&#x4EE3;&#x7801;</a></li>
+<li><a href="https://static.didialift.com/pinche/gift/resource/gs6ioeb4li8-1600686674484-dreambox_ios.zip" target="_blank">IOS &#x5DE5;&#x7A0B;&#x4EE3;&#x7801;</a></li>
+</ul>
+<p>&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x540E;&#x9762;&#x5185;&#x5BB9;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x628A;&#x5DE5;&#x7A0B;<font color="red">run&#x8D77;&#x6765;...run&#x8D77;&#x6765;...run&#x8D77;&#x6765;...</font> &#x7B80;&#x5355;&#x8D77;&#x89C1;&#xFF0C;&#x793A;&#x4F8B;&#x7684;DreamBox&#x6A21;&#x677F;&#x4F1A;&#x91C7;&#x7528;&#x672C;&#x5730;&#x65B9;&#x5F0F;&#x52A0;&#x8F7D;&#xFF0C;&#x672C;&#x5730;&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x53EF;&#x53C2;&#x8003;DreamBox gitbook&#x7684; <a href="TODO%20github%20page">&#x5FEB;&#x901F;&#x5165;&#x95E8;</a></p>
+<h3 id="22-native&#x5411;dreambox&#x53D1;&#x9001;&#x4E8B;&#x4EF6;">2.2 Native&#x5411;DreamBox&#x53D1;&#x9001;&#x4E8B;&#x4EF6;</h3>
+<h4 id="221-&#x793A;&#x4F8B;">2.2.1 &#x793A;&#x4F8B;</h4>
+<p>&#x4E0B;&#x56FE;&#x6F14;&#x793A;Native&#x5411;DreamBox&#x53D1;&#x9001;&#x4E8B;&#x4EF6;</p>
+<center class="half">
+    <img style="border:2px solid black" src="http://img-hxy021.didistatic.com/static/km/do1_iU6ZcCzJGYQKy2nT5sGL" width="380">
+</center>
+
+<ul>
+<li>&#x6DF1;&#x7EFF;&#x8272;&#x80CC;&#x666F;&#x5BB9;&#x5668;&#x662F;DreamBox&#x5BB9;&#x5668;(debug&#x73AF;&#x5883;&#x53F3;&#x4E0A;&#x89D2;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x89D2;&#x6807;)&#xFF0C;&#x5BB9;&#x5668;&#x91CC;&#x6709;&#x4E00;&#x4E2A;TextView</li>
+<li>&#x6DF1;&#x7070;&#x8272;&#x80CC;&#x666F;&#x6309;&#x94AE;&#x662F;native&#x7684;TextView [click me]</li>
+<li>&#x70B9;&#x51FB;[click me]&#xFF0C;DreamBox&#x5BB9;&#x5668;&#x91CC;&#x7684;TextView&#x6587;&#x6848;&#x4F1A;&#x6BCF;&#x6B21;&#x52A0;1</li>
+</ul>
+<h4 id="222-dsl&#x6A21;&#x677F;">2.2.2 dsl&#x6A21;&#x677F;</h4>
+<p>&#x5B9E;&#x73B0;&#x4E0A;&#x8FF0;&#x6548;&#x679C;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x7F16;&#x5199;DreamBox&#x6A21;&#x677F;&#x5165;&#x4E0B;&#xFF1A;</p>
+<pre><code>&lt;dbl xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+    &lt;meta&gt;
+        &lt;eventData testData=&quot;Native To DreamBox&quot; /&gt;
+    &lt;/meta&gt;
+    &lt;onEvent eid=&quot;1000&quot; msgTo=&quot;eventData&quot;&gt;
+        &lt;toast src=&quot;${eventData.toast}&quot; /&gt;
+    &lt;/onEvent&gt;
+    &lt;render&gt;
+        &lt;text bottomToBottom=&quot;parent&quot; changeOn=&quot;eventData&quot; color=&quot;#FFFFFF&quot; height=&quot;wrap&quot; leftToLeft=&quot;parent&quot;
+            rightToRight=&quot;parent&quot; size=&quot;20dp&quot; src=&quot;${eventData.testData}&quot; topToTop=&quot;parent&quot; width=&quot;wrap&quot; /&gt;
+    &lt;/render&gt;
+&lt;/dbl&gt;
+</code></pre><ul>
+<li>&#x6839;&#x8282;&#x70B9;dbl&#x91CC;&#x5305;&#x542B;&#x6570;&#x636E;&#x6C60;&#x8282;&#x70B9;<code>meta</code>&#xFF0C;native&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x8282;&#x70B9;<code>onEvent</code>&#xFF0C;&#x6E32;&#x67D3;&#x8282;&#x70B9;<code>render</code></li>
+<li><code>meta</code>&#x6570;&#x636E;&#x6C60;&#x91CC;&#x9ED8;&#x8BA4;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6E90;<code>eventData</code></li>
+<li><code>render</code>&#x8282;&#x70B9;&#x91CC;&#x662F;<code>text</code>&#x8282;&#x70B9;</li>
+</ul>
+<h4 id="222-native&#x4E8B;&#x4EF6;&#x76D1;&#x542C;">2.2.2 native&#x4E8B;&#x4EF6;&#x76D1;&#x542C;</h4>
+<p>&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;DSL</p>
+<pre><code>&lt;dbl&gt;
+    ......
+    &lt;onEvent eid=&quot;1000&quot; msgTo=&quot;eventData&quot;&gt;
+        &lt;toast src=&quot;${eventData.toast}&quot; /&gt;
+    &lt;/onEvent&gt;
+    ......
+&lt;/dbl&gt;
+</code></pre><p>&#x5F53;DreamBox&#x63A5;&#x6536;&#x5230;&#x4E00;&#x4E2A;native&#x53D1;&#x9001;&#x8FC7;&#x6765;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x5148;&#x5224;&#x65AD;&#x4E8B;&#x4EF6;id&#x662F;&#x5426;&#x4E3A;1000&#xFF0C;&#x5982;&#x679C;&#x4E8B;&#x4EF6;id&#x4E3A;1000&#xFF0C;&#x4F1A;&#x5C06;&#x5904;&#x7406;&#x8BE5;&#x4E8B;&#x4EF6;&#x3002;&#x5177;&#x4F53;&#x4F1A;&#x505A;&#x4E24;&#x4E2A;&#x4E8B;&#x60C5;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E8B;&#x4EF6;&#x643A;&#x5E26;&#x4E86;&#x6570;&#x636E;&#x8FC7;&#x6765;&#xFF0C;&#x4F1A;&#x5C06;&#x6570;&#x636E;&#x653E;&#x5165;meta&#x6570;&#x636E;&#x6C60;&#x7684;<code>msgTo</code>&#x6307;&#x5B9A;&#x7684;&#x8282;&#x70B9;&#x4E0B;&#x3002;&#x672C;&#x4F8B;&#x4E3A;&#x653E;&#x5230;<code>eventData</code>&#x8282;&#x70B9;&#x4E0B;</li>
+<li>&#x6267;&#x884C;<code>toast</code> action&#xFF0C;toast <code>src</code> &#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x6E90;&#x4E3A;&#x4E8B;&#x4EF6;&#x643A;&#x5E26;&#x8FC7;&#x6765;&#x7684;&#x6570;&#x636E;&#x3002;&#x6570;&#x636E;&#x53D6;&#x7528;&#x65B9;&#x5F0F;&#x4E3A;<code>${eventData.xxx}</code></li>
+</ul>
+<p>&#x6570;&#x636E;&#x76F8;&#x5173;&#x6982;&#x5FF5;&#x53C2;&#x8003; <a href="TODO%20github%20page">meta&#x8282;&#x70B9;</a> &#x4EE5;&#x53CA; &#x5DE5;&#x4F5C;&#x539F;&#x7406; <a href="TODO%20github%20page">&#x6570;&#x636E;</a> &#x4E00;&#x8282;</p>
+<h4 id="223-&#x6587;&#x6848;&#x5237;&#x65B0;">2.2.3 &#x6587;&#x6848;&#x5237;&#x65B0;</h4>
+<p>&#x518D;&#x6765;&#x5173;&#x6CE8;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;DSL</p>
+<pre><code>&lt;dbl&gt;
+    ......
+    &lt;render&gt;
+        &lt;text bottomToBottom=&quot;parent&quot; changeOn=&quot;eventData&quot; color=&quot;#FFFFFF&quot; height=&quot;wrap&quot; leftToLeft=&quot;parent&quot;
+            rightToRight=&quot;parent&quot; size=&quot;20dp&quot; src=&quot;${eventData.testData}&quot; topToTop=&quot;parent&quot; width=&quot;wrap&quot; /&gt;
+    &lt;/render&gt;
+    ......
+&lt;/dbl&gt;
+</code></pre><ul>
+<li>text &#x7684; <code>src</code>&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x4E3A;<code>eventData.testData</code>&#xFF0C;&#x5373;text&#x7684;&#x6587;&#x6848;&#x9ED8;&#x8BA4;&#x4E3A;<code>Native To DreamBox</code></li>
+<li>text &#x7684; <code>changeOn</code>&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x4E3A;<code>eventData</code>&#xFF0C;&#x5373;<code>eventData</code>&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#x4F1A;&#x5237;&#x65B0;text&#x663E;&#x793A;&#x6587;&#x6848;</li>
+</ul>
+<h4 id="224-&#x6A21;&#x677F;&#x52A0;&#x8F7D;&#x53CA;&#x4E8B;&#x4EF6;&#x53D1;&#x9001;">2.2.4 &#x6A21;&#x677F;&#x52A0;&#x8F7D;&#x53CA;&#x4E8B;&#x4EF6;&#x53D1;&#x9001;</h4>
+<p>&#x672C;&#x5C0F;&#x7ED3;&#x6D89;&#x53CA;Android&#x548C;IOS&#x4E24;&#x4E2A;&#x5E73;&#x53F0;&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#xFF0C;&#x5C06;&#x5206;&#x522B;&#x5C55;&#x793A;</p>
+<h5 id="2241-android">2.2.4.1 Android</h5>
+<p>assets&#x76EE;&#x5F55;&#x6709;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6A21;&#x677F;<code>local.event_demo_1.dbt</code>&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7528;&#x6765;&#x52A0;&#x8F7D;&#x6A21;&#x677F;&#xFF0C;&#x53D1;&#x9001;&#x4E8B;&#x4EF6;</p>
+<pre><code>class MainActivityKt : AppCompatActivity() {
+    ......
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContentView(R.layout.activity_main)
+
+        // event Native To DreamBox
+        val dbView1 = findViewById&lt;DreamBoxView&gt;(R.id.db_container_1)
+        // &#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;render&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6E32;&#x67D3;
+        dbView1.render(DemoApplication.ACCESS_KEY, &quot;event_demo_1&quot;, null)
+        val txtClick = findViewById&lt;TextView&gt;(R.id.txt_click)
+        // &#x5411;DreamBox&#x53D1;&#x9001;&#x4E8B;&#x4EF6;
+        txtClick.setOnClickListener { dbView1.sendEvent(&quot;1000&quot;, getNToDCountJson()) }
+        ......
+    }
+
+    private fun getNToDCountJson(): String? {
+        return &quot;{\&quot;toast\&quot;:\&quot;Native to DreamBox event\&quot;,\&quot;testData\&quot;: \&quot;Native To DreamBox: ${countNToD++}\&quot;}&quot;
+    }
+    ......
+}
+</code></pre><ul>
+<li>&#x5C06;dsl&#x6A21;&#x677F;&#x7F16;&#x8BD1;&#x540E;&#xFF0C;&#x590D;&#x5236;&#x7F16;&#x8BD1;&#x7801;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;<code>local_event_demo_1.dbt</code>&#x653E;&#x5165;assets&#x76EE;&#x5F55;</li>
+<li>&#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;render&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6E32;&#x67D3;</li>
+<li>&#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;<code>sendEvent</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4E8B;&#x4EF6;id<code>1000</code>&#x548C;&#x6A21;&#x677F;&#x91CC;&#x5BF9;&#x5E94;&#x8D77;&#x6765;<ul>
+<li>dbView1.sendEvent(&quot;1000&quot;, getNToDCountJson());</li>
+<li>&#x6A21;&#x677F;&#x91CC;&#x7684;onEvent&#x8282;&#x70B9;&#x5B9A;&#x4E49;&#x4E86;&#x5982;&#x4F55;&#x5904;&#x7406;&#x8FD9;&#x4E2A;id&#x4E3A;1000&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x5177;&#x4F53;&#x4E3A;&#xFF1A;<ul>
+<li>&#x5F39;&#x4E00;&#x4E2A;toast</li>
+<li>&#x6539;&#x53D8;meta&#x6C60;&#x7684;eventData&#x8282;&#x70B9;&#xFF0C;&#x540C;&#x65F6;text&#x7531;&#x4E8E;&#x76D1;&#x542C;&#x4E86;eventData&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x6587;&#x6848;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="2242-ios">2.2.4.2 IOS</h5>
+<p>&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x6709;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6A21;&#x677F;<code>local.event_demo_1.dbt</code>&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7528;&#x6765;&#x52A0;&#x8F7D;&#x6A21;&#x677F;&#xFF0C;&#x53D1;&#x9001;&#x4E8B;&#x4EF6;</p>
+<pre><code>- (void)createDBView1 {
+    //&#x89E3;&#x6790;dict
+    self.dbView = [[DBTreeView alloc] init];
+    [self.dbView loadWithTemplateId:@&quot;event_demo_1&quot; accessKey:@&quot;DEMO&quot; extData:nil completionBlock:nil];
+    [self.view addSubview:self.dbView];
+    [self.dbView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(50);
+        make.left.right.equalTo(self.view);
+        make.height.equalTo(self.view).dividedBy(5);
+    }];
+    self.dbView.backgroundColor = [UIColor db_colorWithHexString:@&quot;4eac7c&quot;];
+}   
+</code></pre><ul>
+<li>&#x5C06;dsl&#x6A21;&#x677F;&#x7F16;&#x8BD1;&#x540E;&#xFF0C;&#x590D;&#x5236;&#x7F16;&#x8BD1;&#x7801;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;<code>local_event_demo_1.dbt</code>&#x653E;&#x5165;assets&#x76EE;&#x5F55;</li>
+<li>&#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;loadWithTemplateId:accessKey:extData:completionBlock:&#x65B9;&#x6CD5;,&#x8FDB;&#x884C;&#x6E32;&#x67D3;</li>
+<li>&#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;<code>sendEvent</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4E8B;&#x4EF6;id<code>1000</code>&#x548C;&#x6A21;&#x677F;&#x91CC;&#x5BF9;&#x5E94;&#x8D77;&#x6765;<ul>
+<li>[self.dbView sendEventWithEventID:@&quot;1000&quot; data:newEventCbMsg];</li>
+<li>&#x6A21;&#x677F;&#x91CC;&#x7684;onEvent&#x8282;&#x70B9;&#x5B9A;&#x4E49;&#x4E86;&#x5982;&#x4F55;&#x5904;&#x7406;&#x8FD9;&#x4E2A;id&#x4E3A;1000&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x5177;&#x4F53;&#x4E3A;&#xFF1A;<ul>
+<li>&#x5F39;&#x4E00;&#x4E2A;toast</li>
+<li>&#x6539;&#x53D8;meta&#x6C60;&#x7684;eventData&#x8282;&#x70B9;&#xFF0C;&#x540C;&#x65F6;text&#x7531;&#x4E8E;&#x76D1;&#x542C;&#x4E86;eventData&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x6587;&#x6848;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-dreambox&#x5411;native&#x53D1;&#x9001;&#x4E8B;&#x4EF6;">2.3 DreamBox&#x5411;Native&#x53D1;&#x9001;&#x4E8B;&#x4EF6;</h3>
+<h4 id="231-&#x793A;&#x4F8B;">2.3.1 &#x793A;&#x4F8B;</h4>
+<p>&#x4E0B;&#x56FE;&#x6F14;&#x793A;DreamBox&#x5411;Native&#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#xFF0C;Native&#x63A5;&#x6536;&#x4E8B;&#x4EF6;&#x5E76;&#x5904;&#x7406;&#x5B8C;&#x540E;&#x4F1A;&#x56DE;&#x8C03;DreamBox</p>
+<center class="half">
+    <img style="border:2px solid black" src="http://img-hxy021.didistatic.com/static/km/do1_kZPHXUiE7rw3dLqRqNJ9" width="380">
+</center>
+
+<ul>
+<li>&#x540C;&#x6837;&#xFF0C;&#x6DF1;&#x7EFF;&#x8272;&#x80CC;&#x666F;&#x5BB9;&#x5668;&#x662F;DreamBox&#x5BB9;&#x5668;&#xFF0C;&#x5BB9;&#x5668;&#x91CC;&#x6709;&#x4E00;&#x4E2A;TextView [click me]</li>
+<li>DreamBox&#x5BB9;&#x5668;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;native TextView</li>
+<li>&#x5355;&#x51FB;DreamBox&#x5BB9;&#x5668;&#x91CC;&#x7684;[click me]&#xFF0C;native TextView&#x6587;&#x6848;&#x4F1A;&#x52A0;1</li>
+<li>&#x6570;&#x5B57;&#x52A0;1&#x540E;&#xFF0C;Native&#x56DE;&#x8C03;DreamBox&#xFF0C;&#x5E76;&#x663E;&#x793A;&#x5728;DreamBox&#x5BB9;&#x5668;&#x53F3;&#x4E0B;&#x89D2;</li>
+</ul>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x501F;&#x52A9;&#x8FD9;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5C0F;demo&#xFF0C;&#x6765;&#x8BB2;&#x8FF0;DreamBox&#x4E8B;&#x4EF6;&#x7BA1;&#x9053;&#x6240;&#x6D89;&#x53CA;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x3002;</p>
+<h4 id="232-dsl&#x6A21;&#x677F;">2.3.2 dsl&#x6A21;&#x677F;</h4>
+<p>&#x5B9E;&#x73B0;&#x4E0A;&#x8FF0;&#x6548;&#x679C;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x7F16;&#x5199;DreamBox&#x6A21;&#x677F;&#x5165;&#x4E0B;&#xFF1A;</p>
+<pre><code>&lt;dbl xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+    &lt;meta&gt;
+        &lt;eventData testDataCallback=&quot;Callback&quot; /&gt;
+    &lt;/meta&gt;
+    &lt;render&gt;
+        &lt;text backgroundColor=&quot;#666666&quot; bottomToBottom=&quot;parent&quot; color=&quot;#FFFFFF&quot; gravity=&quot;center&quot; height=&quot;50dp&quot;
+            leftToLeft=&quot;parent&quot; rightToRight=&quot;parent&quot; size=&quot;20dp&quot; src=&quot;click me&quot; topToTop=&quot;parent&quot; width=&quot;200dp&quot;&gt;
+            &lt;onClick&gt;
+                &lt;sendEvent eid=&quot;2000&quot;&gt;
+                    &lt;msg testData=&quot;DreamBox To Native: &quot; /&gt;
+                    &lt;callback msgTo=&quot;eventData&quot;&gt;
+                        &lt;toast src=&quot;${eventData.toast}&quot; /&gt;
+                    &lt;/callback&gt;
+                &lt;/sendEvent&gt;
+            &lt;/onClick&gt;
+        &lt;/text&gt;
+        &lt;text bottomToBottom=&quot;parent&quot; changeOn=&quot;eventData&quot; color=&quot;#FFFFFF&quot; marginBottom=&quot;20dp&quot; marginRight=&quot;5dp&quot;
+            rightToRight=&quot;parent&quot; src=&quot;${eventData.testDataCallback}&quot; /&gt;
+    &lt;/render&gt;
+&lt;/dbl&gt;
+</code></pre><ul>
+<li>&#x6839;&#x8282;&#x70B9;dbl&#x91CC;&#x5305;&#x542B;&#x6570;&#x636E;&#x6C60;&#x8282;&#x70B9;<code>meta</code>&#xFF0C;&#x6E32;&#x67D3;&#x8282;&#x70B9;<code>render</code></li>
+<li><code>meta</code>&#x6570;&#x636E;&#x6C60;&#x91CC;&#x9ED8;&#x8BA4;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6E90;<code>eventData</code></li>
+<li><code>render</code>&#x8282;&#x70B9;&#x91CC;&#x6709;2&#x4E2A;<code>text</code>&#x8282;&#x70B9;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;text&#x5355;&#x51FB;&#x65F6;&#x4F1A;&#x5411;native&#x53D1;&#x9001;event</li>
+</ul>
+<h4 id="233-&#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#x7ED9;native">2.3.3 &#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#x7ED9;native</h4>
+<p>&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;DSL</p>
+<pre><code>&lt;dbl&gt;
+    ......
+        &lt;onClick&gt;
+            &lt;sendEvent eid=&quot;2000&quot;&gt;
+                &lt;msg testData=&quot;DreamBox To Native: &quot; /&gt;
+                ......
+            &lt;/sendEvent&gt;
+        &lt;/onClick&gt;
+    ......
+&lt;/dbl&gt;
+</code></pre><p>&#x70B9;&#x51FB;DreamBox&#x91CC;&#x7684;text&#x7EC4;&#x4EF6;&#xFF0C;&#x4F1A;&#x5411;native&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;</p>
+<ul>
+<li>&#x4E8B;&#x4EF6;id&#x4E3A;2000</li>
+<li>&#x643A;&#x5E26;&#x4E00;&#x4E2A;json&#x6570;&#x636E; <code>testData</code></li>
+</ul>
+<h4 id="234-&#x6A21;&#x677F;&#x52A0;&#x8F7D;&#x53CA;&#x4E8B;&#x4EF6;&#x63A5;&#x6536;">2.3.4 &#x6A21;&#x677F;&#x52A0;&#x8F7D;&#x53CA;&#x4E8B;&#x4EF6;&#x63A5;&#x6536;</h4>
+<p>&#x672C;&#x5C0F;&#x7ED3;&#x6D89;&#x53CA;Android&#x548C;IOS&#x4E24;&#x4E2A;&#x5E73;&#x53F0;&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#xFF0C;&#x5C06;&#x5206;&#x522B;&#x5C55;&#x793A;</p>
+<h5 id="2341-android">2.3.4.1 Android</h5>
+<p>assets&#x76EE;&#x5F55;&#x6709;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6A21;&#x677F;<code>local.event_demo_2.dbt</code>&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7528;&#x6765;&#x52A0;&#x8F7D;&#x6A21;&#x677F;&#xFF0C;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5BF9;&#x8C61;</p>
+<pre><code>class MainActivityKt : AppCompatActivity() {
+    ......
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContentView(R.layout.activity_main)
+
+        ......
+        // event D TO N
+        val txtMsg = findViewById&lt;TextView&gt;(R.id.txt_msg)
+        val dbView2 = findViewById&lt;DreamBoxView&gt;(R.id.db_container_2)
+        // &#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;render&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6E32;&#x67D3;
+        dbView2.render(DemoApplication.ACCESS_KEY, &quot;event_demo_2&quot;, null)
+        // &#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;registerEventReceiver&#x65B9;&#x6CD5;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;
+        dbView2.registerEventReceiver(&quot;2000&quot;) { msg, callback -&gt;
+            countDToN++
+            txtMsg.text = msg[&quot;testData&quot;].asString + countDToN
+            callback?.onCallback(getDToNCountJson())
+        }
+    }
+    ......
+    private fun getDToNCountJson(): String? {
+        return &quot;{\&quot;toast\&quot;:\&quot;DreamBox To Native Event\&quot;,\&quot;testDataCallback\&quot;: \&quot;[Callback]: ${++countDToN}\&quot;}&quot;
+    }
+}
+</code></pre><ul>
+<li>&#x5C06;dsl&#x6A21;&#x677F;&#x7F16;&#x8BD1;&#x540E;&#xFF0C;&#x590D;&#x5236;&#x7F16;&#x8BD1;&#x7801;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;<code>local_event_demo_2.dbt</code>&#x653E;&#x5165;assets&#x76EE;&#x5F55;</li>
+<li>&#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;<code>registerEventReceiver</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;id&#x4E3A;<code>2000</code>&#x56DE;&#x8C03;&#x5904;&#x7406;&#x5B9E;&#x73B0;&#x3002;&#x4E8B;&#x4EF6;id&#x548C;&#x6A21;&#x677F;&#x91CC;&#x5BF9;&#x5E94;&#x8D77;&#x6765;&#xFF0C;&#x6536;&#x5230;dreambox&#x53D1;&#x9001;&#x6765;&#x7684;&#x4E8B;&#x4EF6;&#x540E;&#x505A;&#x5982;&#x4E0B;&#x5904;&#x7406;<ul>
+<li>&#x4E8B;&#x4EF6;id&#x662F;&#x5426;&#x4E3A;2000&#xFF0C;&#x662F;&#x5219;&#x8FDB;&#x884C;&#x5904;&#x7406;</li>
+<li>refresh textview&#x7684;&#x6587;&#x6848;</li>
+<li>&#x56DE;&#x8C03;DreamBox&#x5E76;&#x643A;&#x5E26;&#x4E00;&#x4E2A;json&#x6570;&#x636E;</li>
+</ul>
+</li>
+</ul>
+<h5 id="2342-ios">2.3.4.2 IOS</h5>
+<p>&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x6709;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6A21;&#x677F;<code>local.event_demo_2.dbt</code>&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7528;&#x6765;&#x52A0;&#x8F7D;&#x6A21;&#x677F;&#xFF0C;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5BF9;&#x8C61;</p>
+<pre><code>- (void)createDBView2 {
+    NSDate *begin = [NSDate date];
+    //&#x89E3;&#x6790;dict
+     self.dbView2 = [[DBTreeView alloc] init];
+    [self.dbView2 loadWithTemplateId:@&quot;event_demo_2&quot; accessKey:@&quot;DEMO&quot; extData:nil completionBlock:nil];
+    [self.view addSubview:self.dbView2];
+    [self.dbView2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.line.mas_bottom);
+        make.left.right.mas_equalTo(self.view);
+        make.height.equalTo(self.view).dividedBy(5);
+    }];
+    self.dbView2.backgroundColor = [UIColor db_colorWithHexString:@&quot;4eac7c&quot;];;
+    NSDate *end = [NSDate date];
+    NSTimeInterval deltaTime = [end timeIntervalSinceDate:begin];
+    NSLog(@&quot;&#x8017;&#x65F6;&#xFF1A;%fms&quot;, deltaTime*1000);
+    [self.dbView2 registerEventWithEventID:@&quot;2000&quot; andBlock:^(NSString * _Nonnull evendID, NSDictionary * _Nonnull paramDict, NSDictionary * _Nonnull callbackData) {
+
+        self.count2++;
+        NSString *countStr = [NSString stringWithFormat:@&quot;DB to Native &#x8BA1;&#x6570; %ld&quot;, self.count2];
+        _NativeLab.text = countStr;
+        //&#x5BA2;&#x6237;&#x7AEF;&#x5904;&#x7406;&#x903B;&#x8F91;
+        NSString *cbCountStr = [NSString stringWithFormat:@&quot;DB to Native call back &#x8BA1;&#x6570; %ld&quot;, self.count2];
+        NSDictionary *newEventCbMsg = @{
+            @&quot;testDataCallback&quot;: cbCountStr
+        };
+
+        //&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x8981;&#x4F20;&#x9012;&#x7ED9;DB&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4E0E;callBackData&#xFF0C;&#x4E00;&#x8D77;&#x4F20;&#x9012;&#x7ED9;DB
+        [self.dbView2 handleDBCallBack:callbackData data:newEventCbMsg];
+    }];
+}
+</code></pre><ul>
+<li>&#x5C06;dsl&#x6A21;&#x677F;&#x7F16;&#x8BD1;&#x540E;&#xFF0C;&#x590D;&#x5236;&#x7F16;&#x8BD1;&#x7801;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;<code>local_event_demo_2.dbt</code>&#x653E;&#x5165;&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;</li>
+<li>&#x8C03;&#x7528;DreamBox&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x7684;<code>registerEventWithEventID:andBlock:</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;id&#x4E3A;<code>2000</code>&#x56DE;&#x8C03;&#x5904;&#x7406;&#x5B9E;&#x73B0;&#x3002;&#x4E8B;&#x4EF6;id&#x548C;&#x6A21;&#x677F;&#x91CC;&#x5BF9;&#x5E94;&#x8D77;&#x6765;&#xFF0C;&#x6536;&#x5230;dreambox&#x53D1;&#x9001;&#x6765;&#x7684;&#x4E8B;&#x4EF6;&#x540E;&#x505A;&#x5982;&#x4E0B;&#x5904;&#x7406;<ul>
+<li>&#x4E8B;&#x4EF6;id&#x662F;&#x5426;&#x4E3A;2000&#xFF0C;&#x662F;&#x5219;&#x8FDB;&#x884C;&#x5904;&#x7406;</li>
+<li>refresh textview&#x7684;&#x6587;&#x6848;</li>
+<li>&#x56DE;&#x8C03;DreamBox&#x5E76;&#x643A;&#x5E26;&#x4E00;&#x4E2A;json&#x6570;&#x636E;</li>
+</ul>
+</li>
+</ul>
+<h4 id="235-&#x56DE;&#x8C03;&#x4E8B;&#x4EF6;&#x5904;&#x7406;">2.3.5 &#x56DE;&#x8C03;&#x4E8B;&#x4EF6;&#x5904;&#x7406;</h4>
+<pre><code>&lt;dbl&gt;
+    ......
+        &lt;callback msgTo=&quot;eventData&quot;&gt;
+            &lt;toast src=&quot;${eventData.toast}&quot; /&gt;
+        &lt;/callback&gt;
+    ......
+&lt;/dbl&gt;
+</code></pre><p>native&#x5728;&#x6536;&#x5230;&#x4E8B;&#x4EF6;&#x5E76;&#x5904;&#x7406;&#x540E;&#x6267;&#x884C;&#x4E86;&#x56DE;&#x8C03;&#xFF0C;DreamBox&#x6267;&#x884C;&#x5982;&#x4E0B;&#x5904;&#x7406;</p>
+<ul>
+<li>&#x5C06;&#x56DE;&#x8C03;&#x643A;&#x5E26;&#x7684;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x5230;&#x6570;&#x636E;&#x6C60;&#x7684;<code>eventData</code>&#x8282;&#x70B9;</li>
+<li>&#x5F39;&#x4E00;&#x4E2A;toast&#xFF0C;toast&#x5185;&#x5BB9;&#x4E3A;eventData&#x5BF9;&#x8C61;&#x7684;toast&#x5C5E;&#x6027;</li>
+</ul>
+<h4 id="236-&#x56DE;&#x8C03;&#x6587;&#x6848;&#x5237;&#x65B0;">2.3.6 &#x56DE;&#x8C03;&#x6587;&#x6848;&#x5237;&#x65B0;</h4>
+<p>&#x518D;&#x6765;&#x5173;&#x6CE8;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;DSL</p>
+<pre><code>&lt;dbl&gt;
+    ......
+    &lt;render&gt;
+        ......
+        &lt;text bottomToBottom=&quot;parent&quot; changeOn=&quot;eventData&quot; color=&quot;#FFFFFF&quot; marginBottom=&quot;20dp&quot; marginRight=&quot;5dp&quot;
+            rightToRight=&quot;parent&quot; src=&quot;${eventData.testDataCallback}&quot; /&gt;
+    &lt;/render&gt;
+    ......
+&lt;/dbl&gt;
+</code></pre><ul>
+<li>text &#x7684; <code>src</code>&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x4E3A;<code>eventData.testDataCallback</code>&#xFF0C;&#x5373;text&#x7684;&#x6587;&#x6848;&#x9ED8;&#x8BA4;&#x4E3A;<code>[[D TO N] &#x8BA1;&#x6570; callback</code></li>
+<li>text &#x7684; <code>changeOn</code>&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x4E3A;<code>eventData</code>&#xFF0C;&#x5373;<code>eventData</code>&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#x4F1A;&#x5237;&#x65B0;text&#x663E;&#x793A;&#x6587;&#x6848;</li>
+<li>callback&#x65F6;&#x643A;&#x5E26;&#x7684;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x4E86;<code>eventData</code>&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x5237;&#x65B0;&#x6587;&#x6848;</li>
+</ul>
+<h2 id="3-&#x5176;&#x4ED6;">3. &#x5176;&#x4ED6;</h2>
+<ul>
+<li><a href="TODO%20github%20page">DreamBox event</a> &#x6587;&#x6863;&#x91CC;&#x7684;[&#x5B9E;&#x8DF5;&#x5EFA;&#x8BAE;]&#x90E8;&#x5206;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x70B9;&#x7406;&#x89E3;&#x4E00;&#x4E0B;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="meta.html" class="navigation navigation-prev " aria-label="Previous page: 最佳实践系列-数据的复杂用法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../feedback.html" class="navigation navigation-next " aria-label="Next page: 反馈渠道">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"最佳实践系列-事件管道的应用","level":"1.6.2","depth":2,"next":{"title":"反馈渠道","level":"1.7","depth":1,"path":"feedback.md","ref":"feedback.md","articles":[]},"previous":{"title":"最佳实践系列-数据的复杂用法","level":"1.6.1","depth":2,"path":"article/meta.md","ref":"article/meta.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/event.md","mtime":"2020-11-13T11:50:53.789Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-13T11:51:20.293Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

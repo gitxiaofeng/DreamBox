@@ -1,0 +1,1215 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>扩展UI标签-入门篇 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="create_ui_extension_02.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    DreamBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../use/">
+            
+                <a href="../../use/">
+            
+                    
+                    接入与调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../use/environment.html">
+            
+                <a href="../../use/environment.html">
+            
+                    
+                    环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    CLI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../use/cli/">
+            
+                <a href="../../use/cli/">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../use/cli/ext.html">
+            
+                <a href="../../use/cli/ext.html">
+            
+                    
+                    扩展配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../use/start.html">
+            
+                <a href="../../use/start.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../use/playground.html">
+            
+                <a href="../../use/playground.html">
+            
+                    
+                    Playground
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../use/catalog.html">
+            
+                <a href="../../use/catalog.html">
+            
+                    
+                    Catalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../use/api_doc.html">
+            
+                <a href="../../use/api_doc.html">
+            
+                    
+                    API说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../use/use_wrapper.html">
+            
+                <a href="../../use/use_wrapper.html">
+            
+                    
+                    实现自己的wrapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../use/debug_tool_in_project.html">
+            
+                <a href="../../use/debug_tool_in_project.html">
+            
+                    
+                    集成调试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../use/which_is_dbview.html">
+            
+                <a href="../../use/which_is_dbview.html">
+            
+                    
+                    特征识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../use/publish_recommand.html">
+            
+                <a href="../../use/publish_recommand.html">
+            
+                    
+                    发布方案建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../dsl/changelog.html">
+            
+                <a href="../../dsl/changelog.html">
+            
+                    
+                    DSL开发手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../dsl/write_a_dsl.html">
+            
+                <a href="../../dsl/write_a_dsl.html">
+            
+                    
+                    如何编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../dsl/root.html">
+            
+                <a href="../../dsl/root.html">
+            
+                    
+                    根节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../dsl/meta.html">
+            
+                <a href="../../dsl/meta.html">
+            
+                    
+                    元数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../dsl/layout_logic.html">
+            
+                <a href="../../dsl/layout_logic.html">
+            
+                    
+                    布局逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../dsl/ui/base.html">
+            
+                <a href="../../dsl/ui/base.html">
+            
+                    
+                    视图节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../dsl/ui/base.html">
+            
+                <a href="../../dsl/ui/base.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../dsl/ui/text.html">
+            
+                <a href="../../dsl/ui/text.html">
+            
+                    
+                    文字——text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../../dsl/ui/image.html">
+            
+                <a href="../../dsl/ui/image.html">
+            
+                    
+                    图片——image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../../dsl/ui/view.html">
+            
+                <a href="../../dsl/ui/view.html">
+            
+                    
+                    占位——view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../../dsl/ui/loading.html">
+            
+                <a href="../../dsl/ui/loading.html">
+            
+                    
+                    加载——loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../../dsl/ui/progress.html">
+            
+                <a href="../../dsl/ui/progress.html">
+            
+                    
+                    进度条——progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../../dsl/ui/list.html">
+            
+                <a href="../../dsl/ui/list.html">
+            
+                    
+                    列表——list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../../dsl/ui/flow.html">
+            
+                <a href="../../dsl/ui/flow.html">
+            
+                    
+                    流式布局——flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../dsl/func/base.html">
+            
+                <a href="../../dsl/func/base.html">
+            
+                    
+                    动作节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../dsl/func/base.html">
+            
+                <a href="../../dsl/func/base.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../dsl/func/log.html">
+            
+                <a href="../../dsl/func/log.html">
+            
+                    
+                    日志——log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../dsl/func/net.html">
+            
+                <a href="../../dsl/func/net.html">
+            
+                    
+                    网络——net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../../dsl/func/trace.html">
+            
+                <a href="../../dsl/func/trace.html">
+            
+                    
+                    埋点——trace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../../dsl/func/nav.html">
+            
+                <a href="../../dsl/func/nav.html">
+            
+                    
+                    跳转——nav
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../../dsl/func/storage.html">
+            
+                <a href="../../dsl/func/storage.html">
+            
+                    
+                    持久化缓存——storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../../dsl/func/changeMeta.html">
+            
+                <a href="../../dsl/func/changeMeta.html">
+            
+                    
+                    数据变更——changeMeta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="../../dsl/func/dialog.html">
+            
+                <a href="../../dsl/func/dialog.html">
+            
+                    
+                    Dialog弹窗——dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="../../dsl/func/toast.html">
+            
+                <a href="../../dsl/func/toast.html">
+            
+                    
+                    自消失提示——toast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="../../dsl/func/actionAlias.html">
+            
+                <a href="../../dsl/func/actionAlias.html">
+            
+                    
+                    动作领域——actionAlias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.11" data-path="../../dsl/func/invoke.html">
+            
+                <a href="../../dsl/func/invoke.html">
+            
+                    
+                    执行动作——invoke
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.12" data-path="../../dsl/func/closePage.html">
+            
+                <a href="../../dsl/func/closePage.html">
+            
+                    
+                    关闭页面——closePage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../event/event_pipe.html">
+            
+                <a href="../event/event_pipe.html">
+            
+                    
+                    事件管道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../event/event_android.html">
+            
+                <a href="../event/event_android.html">
+            
+                    
+                    android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../event/event_ios.html">
+            
+                <a href="../event/event_ios.html">
+            
+                    
+                    ios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.2.1" data-path="create_ui_extension_01.html">
+            
+                <a href="create_ui_extension_01.html">
+            
+                    
+                    扩展UI标签-入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="create_ui_extension_02.html">
+            
+                <a href="create_ui_extension_02.html">
+            
+                    
+                    扩展UI标签-进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="create_action_extension_01.html">
+            
+                <a href="create_action_extension_01.html">
+            
+                    
+                    扩展动作标签-入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="create_action_extension_02.html">
+            
+                <a href="create_action_extension_02.html">
+            
+                    
+                    扩展动作标签-进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    ios
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../ios/ios_ui_extension.html">
+            
+                <a href="../ios/ios_ui_extension.html">
+            
+                    
+                    扩展UI标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../ios/ios_action_extension.html">
+            
+                <a href="../ios/ios_action_extension.html">
+            
+                    
+                    扩展动作标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../use_extension.md">
+            
+                <span>
+            
+                    
+                    使用已有扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    工作原理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../design/base.html">
+            
+                <a href="../../design/base.html">
+            
+                    
+                    设计理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../design/data.html">
+            
+                <a href="../../design/data.html">
+            
+                    
+                    数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../design/cli.html">
+            
+                <a href="../../design/cli.html">
+            
+                    
+                    编译逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../article/meta.html">
+            
+                <a href="../../article/meta.html">
+            
+                    
+                    最佳实践系列-数据的复杂用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../article/event.html">
+            
+                <a href="../../article/event.html">
+            
+                    
+                    最佳实践系列-事件管道的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../feedback.html">
+            
+                <a href="../../feedback.html">
+            
+                    
+                    反馈渠道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >扩展UI标签-入门篇</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5982;&#x4F55;&#x6269;&#x5C55;android-ui&#x6807;&#x7B7E;-&#x5165;&#x95E8;&#x7BC7;">&#x5982;&#x4F55;&#x6269;&#x5C55;Android UI&#x6807;&#x7B7E;-&#x5165;&#x95E8;&#x7BC7;</h2>
+<p>android&#x6269;&#x5C55;&#x4E00;&#x4E2A;UI&#x6807;&#x7B7E;&#xFF0C;&#x5305;&#x542B;&#x5982;&#x4E0B;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ol>
+<li>&#x57FA;&#x7C7B;&#x7EE7;&#x627F;</li>
+<li>&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x6A21;&#x677F;&#x65B9;&#x6CD5;</li>
+<li>&#x6CE8;&#x518C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;UI&#x6807;&#x7B7E;</li>
+<li>&#x7F16;&#x5199;dsl</li>
+<li>&#x529F;&#x80FD;&#x5B9E;&#x73B0;</li>
+</ol>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x4EE5;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;demo&#x6765;&#x63CF;&#x8FF0;UI&#x6807;&#x7B7E;&#x7684;&#x6269;&#x5C55;&#x8FC7;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x7F16;&#x8F91;&#x6846;UI&#x6807;&#x7B7E;&#x7EC4;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x754C;&#x9762;&#x4E0A;&#x653E;&#x7F6E;&#x4E24;&#x4E2A;&#x6269;&#x5C55;&#x7684;&#x7F16;&#x8F91;&#x6846;&#xFF0C;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x4E00;&#x4E9B;&#x6587;&#x5B57;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x663E;&#x793A;hint&#x63D0;&#x793A;</p>
+<p><img src="../../assets/db_extension_04.png" width="50%"></p>
+<h3 id="1-&#x57FA;&#x7C7B;&#x7EE7;&#x627F;">1. &#x57FA;&#x7C7B;&#x7EE7;&#x627F;</h3>
+<p>&#x5B9A;&#x4E49;&#x7C7B; <code>MyEditView</code> &#x7EE7;&#x627F;&#x81F3;&#x57FA;&#x7C7B; <code>DBBaseView</code>&#xFF0C;&#x57FA;&#x7C7B;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;native&#x6807;&#x7B7E;&#x5B9E;&#x73B0;&#x7C7B;&#x4F5C;&#x4E3A;&#x6CDB;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x7B80;&#x5355;&#x6F14;&#x793A;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x4E86;&#x7CFB;&#x7EDF;&#x81EA;&#x5E26;&#x7684; EditText &#x4F5C;&#x4E3A;&#x6807;&#x7B7E;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;</p>
+<pre><code>public class MyEditView extends DBBaseView&lt;EditText&gt; {
+}
+</code></pre><h3 id="2-&#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x6A21;&#x677F;&#x65B9;&#x6CD5;">2. &#x5B9E;&#x73B0;&#x76F8;&#x5173;&#x6A21;&#x677F;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li>&#x5B9E;&#x73B0; <code>getNodeTag()</code> &#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;node&#x540D;&#x79F0;&#xFF0C;&#x5C06;&#x4F1A;&#x5728;dsl&#x91CC;&#x4F7F;&#x7528;</li>
+<li>&#x5B9E;&#x73B0;&#x8282;&#x70B9;&#x7684; Creator &#x7C7B;&#xFF0C;</li>
+</ul>
+<pre><code>public class MyEditView extends DBBaseView&lt;EditText&gt; {
+    public static String getNodeTag() {
+        return &quot;edit_view&quot;;
+    }
+
+    public static class NodeCreator implements INodeCreator {
+        @Override
+        public MyEditView createNode() {
+            return new MyEditView();
+        }
+    }
+}
+</code></pre><h3 id="3-&#x6CE8;&#x518C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;ui&#x6807;&#x7B7E;">3. &#x6CE8;&#x518C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;UI&#x6807;&#x7B7E;</h3>
+<p>&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x7684;UI&#x6807;&#x7B7E;&#x6CE8;&#x518C;&#x5230;DreamBox&#xFF0C;&#x5728;App&#x542F;&#x52A8;&#x65F6;&#x8FDB;&#x884C;&#x6CE8;&#x518C;</p>
+<pre><code>public class DemoApplication extends Application {
+    ......
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        ......
+        DreamBox.getInstance().registerDBNode(MyEditView.getNodeTag(), new MyEditView.NodeCreator());
+    }
+}
+</code></pre><h3 id="4-&#x7F16;&#x5199;dsl">4. &#x7F16;&#x5199;dsl</h3>
+<p>&#x6309;&#x7167;&#x6A21;&#x677F;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x7684;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x7F16;&#x5199;dsl&#xFF0C;<code>edit_view</code> &#x6807;&#x7B7E;&#x5373;&#x4E3A;&#x7B2C;2&#x6B65; <code>getNodeTag()</code> &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<pre><code>&lt;dbl&gt;
+    &lt;render&gt;
+        &lt;text id=&quot;txt&quot; src=&quot;text-&#x6269;&#x5C55;&#x6D4B;&#x8BD5;&quot; backgroundColor=&quot;#999999&quot; /&gt;
+        &lt;edit_view width=&quot;200dp&quot; topToBottom=&quot;txt&quot; marginTop=&quot;10dp&quot; /&gt;
+    &lt;/render&gt;
+&lt;/dbl&gt;
+</code></pre><p>&#x5982;&#x679C;&#x6B64;&#x65F6;&#x8C03;&#x8BD5;&#x67E5;&#x770B;&#x8282;&#x70B9;&#x6811;&#xFF0C;&#x4F1A;&#x53D1;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;edit_view&#x8282;&#x70B9;&#x5DF2;&#x7ECF;&#x5728;&#x5176;&#x4E2D;&#x4E86;</p>
+<p><img src="../../assets/db_extension_01.png" width="50%"></p>
+<h3 id="5-&#x529F;&#x80FD;&#x5B9E;&#x73B0;">5. &#x529F;&#x80FD;&#x5B9E;&#x73B0;</h3>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5B8C;&#x6210;&#x7EC6;&#x8282;&#x529F;&#x80FD;&#x7684;&#x5B9E;&#x73B0;</p>
+<h4 id="51-&#x6E32;&#x67D3;&#x5904;&#x7406;">5.1 &#x6E32;&#x67D3;&#x5904;&#x7406;</h4>
+<p>&#x8981;&#x60F3;&#x5C06;View&#x663E;&#x793A;&#x5230;&#x754C;&#x9762;&#x4E0A;&#xFF0C;&#x9700;&#x8981;&#x8986;&#x5199;&#x7236;&#x7C7B;&#x7684;&#x5982;&#x4E0B;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;:</p>
+<ul>
+<li><code>createView</code>&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x4E3B;&#x8981;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;native&#x6807;&#x7B7E;&#x5B9E;&#x73B0;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</li>
+<li><code>doRender</code>&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x5904;&#x7406;&#x6570;&#x636E;&#x548C;native&#x6807;&#x7B7E;&#x5B9E;&#x73B0;&#x7C7B;&#x7684;&#x7ED1;&#x5B9A;&#x53CA;&#x5176;&#x4ED6;&#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#x5B9E;&#x73B0;&#x7684;&#x5904;&#x7406;&#x903B;&#x8F91;</li>
+</ul>
+<pre><code>public class MyEditView extends DBBaseView&lt;EditText&gt; {
+    @Override
+    protected EditText createView(DBRootView parentView) {
+        return new EditText(parentView.getContext());
+    }
+
+    @Override
+    protected void doRender(EditText editText) {
+        super.doRender(editText);
+    }
+
+    public static String getNodeTag() {
+        return &quot;edit_view&quot;;
+    }
+
+    public static class NodeCreator implements INodeCreator {
+        @Override
+        public MyEditView createNode() {
+            return new MyEditView();
+        }
+    }
+}
+</code></pre><p>&#x8FD9;&#x91CC;&#x4EE5;&#x7CFB;&#x7EDF;&#x539F;&#x751F;&#x7684; <code>EditText</code> &#x4F5C;&#x4E3A;&#x7F16;&#x8F91;&#x6846;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;EditText&#x7EC4;&#x4EF6;&#x3002;&#x5728; <code>createView</code> &#x65B9;&#x6CD5;&#x91CC;&#xFF0C;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;EditText&#xFF0C;&#x6846;&#x67B6;&#x4F1A;&#x5C06;&#x5B83;&#x6DFB;&#x52A0;&#x5230;&#x7236;&#x5E03;&#x5C40;&#x91CC;&#x3002;</p>
+<p>&#x6B64;&#x65F6;&#x901A;&#x8FC7; LayoutInspector &#x5DE5;&#x5177;&#x67E5;&#x770B;UI&#x6811;&#xFF0C;&#x80FD;&#x770B;&#x5230;EditText&#x5DF2;&#x7ECF;&#x5728;UI&#x6811;&#x91CC;&#x4E86;&#xFF0C;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5230;&#x6548;&#x679C;&#x3002;&#x70B9;&#x51FB;&#x8F93;&#x5165;&#x6846;&#x8F93;&#x5165; <code>Hello EditorText</code>&#xFF0C;&#x5F97;&#x5230;&#x5982;&#x56FE;&#x6548;&#x679C;</p>
+<p><img src="../../assets/db_extension_02.png" width="300"> 
+<img src="../../assets/db_extension_03.png" width="300"></p>
+<h4 id="52-&#x5C5E;&#x6027;&#x5904;&#x7406;">5.2 &#x5C5E;&#x6027;&#x5904;&#x7406;</h4>
+<p>&#x901A;&#x8FC7;&#x7ED9;MyEditText&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;hint&#x6548;&#x679C;&#xFF0C;&#x6765;&#x5C55;&#x793A;&#x5C5E;&#x6027;&#x7684;&#x6269;&#x5C55;&#x3002;</p>
+<p>&#x5148;&#x5728;dsl&#x91CC;&#x65B0;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;MyEditText&#x7EC4;&#x4EF6;&#xFF0C;&#x5E76;&#x65B0;&#x589E;&#x5C5E;&#x6027; <code>hint</code> &#x8D4B;&#x503C;&#x4E3A; hello hint</p>
+<pre><code>&lt;dbl&gt;
+    &lt;render&gt;
+        &lt;text id=&quot;txt&quot; src=&quot;text-&#x6269;&#x5C55;&#x6D4B;&#x8BD5;&quot; backgroundColor=&quot;#999999&quot; /&gt;
+        &lt;edit_view id=&quot;edit&quot; width=&quot;200dp&quot; topToBottom=&quot;txt&quot; marginTop=&quot;10dp /&gt;
+        &lt;edit_view width=&quot;200dp&quot; topToBottom=&quot;edit&quot; marginTop=&quot;10dp&quot; hint=&quot;hello hint&quot; /&gt;
+    &lt;/render&gt;
+&lt;/dbl&gt;
+</code></pre><p>Java&#x4FA7;&#x6269;&#x5C55;&#x7EC4;&#x4EF6;&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x4E0B;</p>
+<pre><code>public class MyEditView extends DBBaseView&lt;EditText&gt; {
+    private String hint;
+
+    @DBDomAttr(key = &quot;hint&quot;)
+    public void setHint(String hint) {
+        this.hint = hint;
+    }
+
+    @Override
+    protected EditText createView(DBRootView parentView) {
+        return new EditText(parentView.getContext());
+    }
+
+    @Override
+    protected void doRender(EditText editText) {
+        super.doRender(editText);
+
+        editText.setHint(hint);
+    }
+
+    public static String getNodeTag() {
+        return &quot;edit_view&quot;;
+    }
+
+    public static class NodeCreator implements INodeCreator {
+        @Override
+        public MyEditView createNode() {
+            return new MyEditView();
+        }
+    }
+}
+</code></pre><p>&#x8FD9;&#x91CC;&#x6709;&#x4E2A;&#x65B0;&#x7684;&#x77E5;&#x8BC6;&#x70B9;&#xFF0C;<code>@DBDomAttr(key = &quot;hint&quot;)</code> &#x6CE8;&#x89E3;&#x3002;&#x8FD9;&#x4E2A;&#x6CE8;&#x89E3;&#x4F1A;&#x81EA;&#x52A8;&#x6293;&#x53D6;dsl&#x91CC;<code>key</code>&#x6307;&#x5B9A;&#x7684;&#x90A3;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x540C;&#x65F6;&#x8C03;&#x7528;&#x88AB;&#x6CE8;&#x89E3;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x5C06;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x8FDB;&#x6765;&#x3002;</p>
+<p>dsl&#x5C5E;&#x6027; <code>hint</code> &#x88AB;&#x8D4B;&#x503C;hello hint&#xFF0C;&#x6240;&#x4EE5;hello hint&#x4F1A;&#x88AB;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5230; <code>setHint</code> &#x65B9;&#x6CD5;&#x3002;&#x65B0;&#x589E;String&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF; <code>hint</code> &#xFF0C;&#x7528;&#x6765;&#x4FDD;&#x5B58;dsl&#x5B9A;&#x4E49;&#x7684;hint&#x7684;&#x5185;&#x5BB9;&#x3002;&#x53EA;&#x9700;&#x8981;&#x5728; <code>doRender</code> &#x65B9;&#x6CD5;&#x91CC;&#x8C03;&#x7528;EditText&#x7684; <code>setHint</code> &#x65B9;&#x6CD5;&#x5373;&#x53EF;&#x5F97;&#x5230;&#x6587;&#x7AE0;&#x5F00;&#x5934;&#x7684;&#x5C55;&#x793A;&#x6548;&#x679C;&#xFF1A;</p>
+<p><img src="../../assets/db_extension_05.png" width="300"></p>
+<p>&#x4EE5;&#x4E0A;&#x662F;android&#x7EC4;&#x4EF6;&#x6269;&#x5C55;&#x7684;&#x5165;&#x95E8;&#x7BC7;&#xFF0C;&#x4EE5;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5C0F;&#x4F8B;&#x5B50;&#x5F15;&#x9886;&#x4F7F;&#x7528;&#x8005;&#x5FEB;&#x901F;&#x7406;&#x89E3;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="create_ui_extension_02.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 扩展UI标签-进阶篇">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"扩展UI标签-入门篇","level":"1.4.2.1","depth":3,"next":{"title":"扩展UI标签-进阶篇","level":"1.4.2.2","depth":3,"path":"extension/android/create_ui_extension_02.md","ref":"extension/android/create_ui_extension_02.md","articles":[]},"previous":{"title":"android","level":"1.4.2","depth":2,"ref":"","articles":[{"title":"扩展UI标签-入门篇","level":"1.4.2.1","depth":3,"path":"extension/android/create_ui_extension_01.md","ref":"extension/android/create_ui_extension_01.md","articles":[]},{"title":"扩展UI标签-进阶篇","level":"1.4.2.2","depth":3,"path":"extension/android/create_ui_extension_02.md","ref":"extension/android/create_ui_extension_02.md","articles":[]},{"title":"扩展动作标签-入门篇","level":"1.4.2.3","depth":3,"path":"extension/android/create_action_extension_01.md","ref":"extension/android/create_action_extension_01.md","articles":[]},{"title":"扩展动作标签-进阶篇","level":"1.4.2.4","depth":3,"path":"extension/android/create_action_extension_02.md","ref":"extension/android/create_action_extension_02.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"extension/android/create_ui_extension_01.md","mtime":"2020-11-13T11:50:53.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-13T11:51:20.293Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

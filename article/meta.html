@@ -1,0 +1,1228 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>最佳实践系列-数据的复杂用法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="event.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    DreamBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../use/">
+            
+                <a href="../use/">
+            
+                    
+                    接入与调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../use/environment.html">
+            
+                <a href="../use/environment.html">
+            
+                    
+                    环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    CLI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../use/cli/">
+            
+                <a href="../use/cli/">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../use/cli/ext.html">
+            
+                <a href="../use/cli/ext.html">
+            
+                    
+                    扩展配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../use/start.html">
+            
+                <a href="../use/start.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../use/playground.html">
+            
+                <a href="../use/playground.html">
+            
+                    
+                    Playground
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../use/catalog.html">
+            
+                <a href="../use/catalog.html">
+            
+                    
+                    Catalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../use/api_doc.html">
+            
+                <a href="../use/api_doc.html">
+            
+                    
+                    API说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../use/use_wrapper.html">
+            
+                <a href="../use/use_wrapper.html">
+            
+                    
+                    实现自己的wrapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../use/debug_tool_in_project.html">
+            
+                <a href="../use/debug_tool_in_project.html">
+            
+                    
+                    集成调试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../use/which_is_dbview.html">
+            
+                <a href="../use/which_is_dbview.html">
+            
+                    
+                    特征识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../use/publish_recommand.html">
+            
+                <a href="../use/publish_recommand.html">
+            
+                    
+                    发布方案建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../dsl/changelog.html">
+            
+                <a href="../dsl/changelog.html">
+            
+                    
+                    DSL开发手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../dsl/write_a_dsl.html">
+            
+                <a href="../dsl/write_a_dsl.html">
+            
+                    
+                    如何编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../dsl/root.html">
+            
+                <a href="../dsl/root.html">
+            
+                    
+                    根节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../dsl/meta.html">
+            
+                <a href="../dsl/meta.html">
+            
+                    
+                    元数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../dsl/layout_logic.html">
+            
+                <a href="../dsl/layout_logic.html">
+            
+                    
+                    布局逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../dsl/ui/base.html">
+            
+                <a href="../dsl/ui/base.html">
+            
+                    
+                    视图节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../dsl/ui/base.html">
+            
+                <a href="../dsl/ui/base.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../dsl/ui/text.html">
+            
+                <a href="../dsl/ui/text.html">
+            
+                    
+                    文字——text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../dsl/ui/image.html">
+            
+                <a href="../dsl/ui/image.html">
+            
+                    
+                    图片——image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../dsl/ui/view.html">
+            
+                <a href="../dsl/ui/view.html">
+            
+                    
+                    占位——view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../dsl/ui/loading.html">
+            
+                <a href="../dsl/ui/loading.html">
+            
+                    
+                    加载——loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../dsl/ui/progress.html">
+            
+                <a href="../dsl/ui/progress.html">
+            
+                    
+                    进度条——progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../dsl/ui/list.html">
+            
+                <a href="../dsl/ui/list.html">
+            
+                    
+                    列表——list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../dsl/ui/flow.html">
+            
+                <a href="../dsl/ui/flow.html">
+            
+                    
+                    流式布局——flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../dsl/func/base.html">
+            
+                <a href="../dsl/func/base.html">
+            
+                    
+                    动作节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../dsl/func/base.html">
+            
+                <a href="../dsl/func/base.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../dsl/func/log.html">
+            
+                <a href="../dsl/func/log.html">
+            
+                    
+                    日志——log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../dsl/func/net.html">
+            
+                <a href="../dsl/func/net.html">
+            
+                    
+                    网络——net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../dsl/func/trace.html">
+            
+                <a href="../dsl/func/trace.html">
+            
+                    
+                    埋点——trace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../dsl/func/nav.html">
+            
+                <a href="../dsl/func/nav.html">
+            
+                    
+                    跳转——nav
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../dsl/func/storage.html">
+            
+                <a href="../dsl/func/storage.html">
+            
+                    
+                    持久化缓存——storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../dsl/func/changeMeta.html">
+            
+                <a href="../dsl/func/changeMeta.html">
+            
+                    
+                    数据变更——changeMeta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="../dsl/func/dialog.html">
+            
+                <a href="../dsl/func/dialog.html">
+            
+                    
+                    Dialog弹窗——dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="../dsl/func/toast.html">
+            
+                <a href="../dsl/func/toast.html">
+            
+                    
+                    自消失提示——toast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="../dsl/func/actionAlias.html">
+            
+                <a href="../dsl/func/actionAlias.html">
+            
+                    
+                    动作领域——actionAlias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.11" data-path="../dsl/func/invoke.html">
+            
+                <a href="../dsl/func/invoke.html">
+            
+                    
+                    执行动作——invoke
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.12" data-path="../dsl/func/closePage.html">
+            
+                <a href="../dsl/func/closePage.html">
+            
+                    
+                    关闭页面——closePage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../extension/">
+            
+                <a href="../extension/">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../extension/event/event_pipe.html">
+            
+                <a href="../extension/event/event_pipe.html">
+            
+                    
+                    事件管道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../extension/event/event_android.html">
+            
+                <a href="../extension/event/event_android.html">
+            
+                    
+                    android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../extension/event/event_ios.html">
+            
+                <a href="../extension/event/event_ios.html">
+            
+                    
+                    ios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../extension/android/create_ui_extension_01.html">
+            
+                <a href="../extension/android/create_ui_extension_01.html">
+            
+                    
+                    扩展UI标签-入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../extension/android/create_ui_extension_02.html">
+            
+                <a href="../extension/android/create_ui_extension_02.html">
+            
+                    
+                    扩展UI标签-进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../extension/android/create_action_extension_01.html">
+            
+                <a href="../extension/android/create_action_extension_01.html">
+            
+                    
+                    扩展动作标签-入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../extension/android/create_action_extension_02.html">
+            
+                <a href="../extension/android/create_action_extension_02.html">
+            
+                    
+                    扩展动作标签-进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    ios
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../extension/ios/ios_ui_extension.html">
+            
+                <a href="../extension/ios/ios_ui_extension.html">
+            
+                    
+                    扩展UI标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../extension/ios/ios_action_extension.html">
+            
+                <a href="../extension/ios/ios_action_extension.html">
+            
+                    
+                    扩展动作标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../extension/use_extension.md">
+            
+                <span>
+            
+                    
+                    使用已有扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    工作原理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../design/base.html">
+            
+                <a href="../design/base.html">
+            
+                    
+                    设计理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../design/data.html">
+            
+                <a href="../design/data.html">
+            
+                    
+                    数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../design/cli.html">
+            
+                <a href="../design/cli.html">
+            
+                    
+                    编译逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="meta.html">
+            
+                <a href="meta.html">
+            
+                    
+                    最佳实践系列-数据的复杂用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    最佳实践系列-事件管道的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../feedback.html">
+            
+                <a href="../feedback.html">
+            
+                    
+                    反馈渠道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >最佳实践系列-数据的复杂用法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>By&#x65B9;&#x7ECD;&#x665F;&#x3001;&#x674E;&#x6CFD;&#x741B;</p>
+<p>&#x672C;&#x6587;&#x7AE0;&#x8BB2;&#x8FF0;&#x4E86;<code>DreamBox</code>&#x6570;&#x636E;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x9605;&#x8BFB;&#x524D;&#x9700;&#x8981;&#x5BF9;<code>DreamBox</code>&#x6709;&#x57FA;&#x672C;&#x4E86;&#x89E3;</p>
+<hr>
+<h3 id="1&#x5143;&#x6570;&#x636E;&#x8282;&#x70B9;meta">1.&#x5143;&#x6570;&#x636E;&#x8282;&#x70B9;meta</h3>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dbl</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span>
+        <span class="hljs-attr">src1</span>=<span class="hljs-string">&quot;hello world!&quot;</span>
+        <span class="hljs-attr">src2</span>=<span class="hljs-string">&quot;true&quot;</span>
+    /<span class="hljs-attr">meta</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">render</span>&gt;</span>
+    ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">render</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dbl</span>&gt;</span>
+</code></pre>
+<p>&#x5728; DreamBox &#x4E2D;&#x7684; meta &#x8282;&#x70B9;&#xFF0C;&#x4EE3;&#x8868;&#x5F53;&#x524D; dbView &#x7684;&#x6570;&#x636E;&#x6C60;&#x3002;&#x6BCF;&#x4E2A; dbView &#x6709;&#x4E14;&#x4EC5;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x552F;&#x4E00;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#x6C60;&#x3002;dbView &#x4E2D;&#x89C6;&#x56FE;&#x6E32;&#x67D3;&#x3001;&#x52A8;&#x4F5C;&#x8282;&#x70B9;&#x6240;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x90FD;&#x662F;&#x4ECE;meta&#x4E2D;&#x83B7;&#x53D6;&#xFF0C;meta &#x53EF;&#x4EE5;&#x7C7B;&#x6BD4;&#x4E3A;&#x4E00;&#x4E2A; <strong>JsonObject</strong> &#xFF0C;&#x4F46;&#x662F;&#x5176;&#x4E2D;&#x7684;&#x952E;&#x503C; <code>ext</code> &#x4E0E; <code>pool</code> &#x4F5C;&#x4E3A;DreamBox&#x5185;&#x90E8;&#x5B57;&#x6BB5;&#x6709;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x3002;</p>
+<h5 id="11&#x8BFB;&#x53D6;meta&#x8282;&#x70B9;&#x6570;&#x636E;">1.1&#x8BFB;&#x53D6;meta&#x8282;&#x70B9;&#x6570;&#x636E;</h5>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x9700;&#x8981;&#x6570;&#x636E;&#x7684;&#x5730;&#x65B9;&#x4F7F;&#x7528; <code>${name}</code> &#x7684;&#x5F62;&#x5F0F;&#x6765;&#x83B7;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x5176;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E00;&#x822C;&#x662F; <code>Boolean</code> &#x3001;<code>Int</code> &#x3001;<code>String</code>&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x4E00;&#x4E2A; <code>JsonObject</code>&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dbl</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;LiLei&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">render</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${name}&quot;</span> <span class="hljs-attr">...</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">render</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dbl</span>&gt;</span>
+</code></pre>
+<p><img src="https://static.didialift.com/pinche/gift/resource/jknldvs2em8-1601282254654-ll.png" alt="LiLei"></p>
+<p>&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x91C7;&#x7528; <code>${parent.level1.level2}</code> &#x901A;&#x8FC7; <code>.</code> &#x6765;&#x83B7;&#x53D6;&#x5D4C;&#x5957;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dbl</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span>&gt;</span> 
+        <span class="hljs-tag">&lt;<span class="hljs-name">person</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;HanMeiMei&quot;</span>/&gt;</span> 
+    <span class="hljs-tag">&lt;/<span class="hljs-name">meta</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">render</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${person.name}&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">render</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dbl</span>&gt;</span>
+</code></pre>
+<p><img src="https://static.didialift.com/pinche/gift/resource/jtaqtjn9tf-1601282254134-hmm.png" alt="HanMeiMei"></p>
+<p>&#x8003;&#x8651;&#x5230;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x8F83;&#x5C0F;&#xFF0C;&#x4E14;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x4F1A;&#x6709;&#x6B67;&#x4E49;&#xFF0C;&#x5BF9;&#x4E8E; <code>JsonArray</code> &#x65E0;&#x6CD5;&#x7B80;&#x5355;&#x901A;&#x8FC7; <del>${childs[0]}</del> &#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5904;&#x7406;&#x3002;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BF8;&#x5982;&#x5217;&#x8868;&#x89C6;&#x56FE;&#x6765;&#x4F7F;&#x7528; <code>JsonArray</code> &#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dbl</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">render</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">list</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${ext.db_list}&quot;</span> <span class="hljs-attr">...</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;I&apos;m header View&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">vh</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">...</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${img}&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${title}&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${subtitle}&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${arrow}&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">vh</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;line&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;I&apos;m footer View&quot;</span> <span class="hljs-attr">...</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">list</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">render</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dbl</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-json"><span class="hljs-comment">//ext&#x6570;&#x636E;</span>
+{
+    <span class="hljs-string">&quot;db_list&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;img&quot;</span>: <span class="hljs-string">&quot;https://static.didialift.com/pinche/gift/resource/b78l9o67vr4-1594955096192-qian.png&quot;</span>,
+            <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#x4E3B;&#x6807;&#x9898;&#x4E3B;&#x6807;&#x9898;&quot;</span>,
+            <span class="hljs-string">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x63CF;&#x8FF0;&#xFF0C;Yahaha&quot;</span>,
+            <span class="hljs-string">&quot;arrow&quot;</span>:<span class="hljs-string">&quot;https://static.didialift.com/pinche/gift/resource/nm78nn24srg-1596768708081-bts_home_ctr_top_content_arrow.png&quot;</span>
+        },
+        ...
+    ]
+}
+</code></pre>
+<p><img src="https://static.didialift.com/pinche/gift/resource/g1lcoag50qo-1601002681234-ListY.png" alt="list"></p>
+<h5 id="12&#x8BBE;&#x7F6E;meta&#x8282;&#x70B9;&#x6570;&#x636E;">1.2&#x8BBE;&#x7F6E;meta&#x8282;&#x70B9;&#x6570;&#x636E;</h5>
+<p>&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x76F4;&#x63A5;&#x5728; dbView &#x7684; <code>meta</code> &#x8282;&#x70B9;&#x4E2D;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF0C;&#x8FD9;&#x79CD;xml&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x4F1A;&#x6700;&#x7EC8;&#x88AB;&#x7F16;&#x8BD1;&#x6210;&#x5BF9;&#x5E94;json&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x4F9D;&#x8D56;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;meta&#x8282;&#x70B9;&#x4E2D;&#x5199;&#x4E0B;&#x4EFB;&#x610F;&#x7684;json&#x6570;&#x636E;(&#x6BD4;&#x5982;json&#x6570;&#x7EC4;&#xFF0C;json&#x5D4C;&#x5957;)</p>
+<pre><code class="lang-xml">//xml
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">person</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">dog</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;kiki&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">person</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">meta</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-json"><span class="hljs-comment">//json</span>
+<span class="hljs-string">&quot;meta&quot;</span>: {
+<span class="hljs-string">&quot;person&quot;</span>: {
+    <span class="hljs-string">&quot;dog&quot;</span>: {
+         <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;kiki&quot;</span>
+    }
+}
+</code></pre>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF08; <a href="TODO%20github%20page">&#x52A8;&#x4F5C;&#x8282;&#x70B9;<code>&lt;net&gt;</code></a> &#xFF09;&#xFF0C;&#x6216;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#xFF08; <a href="TODO%20github%20page">&#x4E8B;&#x4EF6;&#x7BA1;&#x9053;<code>&lt;sendEvent&gt;</code>&#x3001;<code>&lt;onEvent&gt;</code></a> &#xFF09;&#x7B49;&#x65B9;&#x5F0F;&#x4E0E;&#x5916;&#x754C;&#x4EA4;&#x4E92;&#xFF0C;&#x6700;&#x7EC8;&#x4F1A;&#x83B7;&#x53D6;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B0;&#x6570;&#x636E;&#x4FBF;&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x5728; <code>meta</code> &#x6570;&#x636E;&#x6C60;&#x4E2D;&#xFF0C;&#x4F9B; DreamBox &#x4F7F;&#x7528;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">net</span> <span class="hljs-attr">url</span>=<span class="hljs-string">&quot;xxx&quot;</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;net_result&quot;</span> &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">onSuccess</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">toast</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;&#x6570;&#x636E;&#x83B7;&#x53D6;&#x6210;&#x529F;&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">onSuccess</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">onError</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">toast</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;&#x7F51;&#x7EDC;&#x6570;&#x636E;&#x83B7;&#x53D6;&#x5931;&#x8D25;&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">onError</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">net</span>&gt;</span>
+</code></pre>
+<p>&#x800C;&#x5728;db&#x5185;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x52A8;&#x4F5C;&#x8282;&#x70B9;&#x6765;&#x66F4;&#x6539; meta &#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF08; <a href="TODO%20github%20page">&#x52A8;&#x4F5C;&#x8282;&#x70B9;<code>&lt;changeMeta&gt;</code></a> &#xFF09;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dbl</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">confirm</span>=<span class="hljs-string">&quot;&#x6211;&#x662F;&#x53D8;&#x66F4;&#x524D;&#x7684;&#x6570;&#x636E;:1234567&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">render</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;click me,&#x53D8;&#x66F4;&#x6570;&#x636E;&quot;</span> &gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">onClick</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">changeMeta</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;confirm&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x6211;&#x662F;&#x53D8;&#x66F4;&#x540E;&#x7684;&#x6570;&#x636E;:7654321&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">onClick</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;${confirm}&quot;</span> <span class="hljs-attr">changeOn</span>=<span class="hljs-string">&quot;confirm&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">render</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dbl</span>&gt;</span>
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x6570;&#x636E;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x7ED3;&#x5408; <a href="TODO%20github%20page"><code>changeOn</code></a> &#x65B9;&#x5F0F;&#xFF0C;&#x4FBF;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x9875;&#x9762;&#x7684;&#x5237;&#x65B0;&#xFF0C;&#x66F4;&#x65B0;ui&#x5C55;&#x793A;&#x3002;</p>
+<h3 id="2&#x5168;&#x5C40;&#x6570;&#x636E;&#x6C60;pool">2.&#x5168;&#x5C40;&#x6570;&#x636E;&#x6C60;pool</h3>
+<p>&#x867D;&#x7136;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#xFF0C;&#x5F88;&#x591A;&#x529F;&#x80FD;&#x9760; dbView &#x672C;&#x8EAB;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7; h5 &#x9875;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x4F1A;&#x9047;&#x5230;&#x8DDF;h5&#x540C;&#x6837;&#x7684;&#x95EE;&#x9898;&#xFF1A;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x72EC;&#x7ACB;&#x7684;&#x9875;&#x9762;&#x5F88;&#x96BE;&#x4E86;&#x89E3;&#x5F53;&#x524D;&#x5E94;&#x7528;&#x72B6;&#x6001;&#x3002;&#x6BD4;&#x5982;&#x5F53;&#x524D;&#x662F;&#x5426;&#x767B;&#x5F55;&#xFF08;<code>login</code>&#xFF09;&#x3001;&#x7528;&#x6237;&#x7684;&#x89D2;&#x8272;&#x7C7B;&#x578B;&#xFF0C;&#x6216;&#x8005;&#x624B;&#x673A;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x5168;&#x5C40;&#x6570;&#x636E;&#x5FC5;&#x987B;&#x4F9D;&#x8D56;&#x5BBF;&#x4E3B; App &#x63D0;&#x4F9B;&#x3002;</p>
+<p>&#x8003;&#x8651;&#x5230;&#x8FD9;&#x4E9B;&#x573A;&#x666F;&#xFF0C;&#x5728;db&#x5185;&#x5EFA;&#x7ACB;&#x4E86;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x6570;&#x636E;&#x6C60; <code>pool</code>&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x8FD9;&#x4E9B;&#x5E94;&#x7528;&#x6216;&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x5168;&#x5C40;&#x6570;&#x636E;&#x3002;<code>pool</code> &#x9700;&#x8981;&#x5BBF;&#x4E3B;&#x5728;&#x5408;&#x9002;&#x65F6;&#x673A;&#x5C06;&#x6570;&#x636E;&#x6CE8;&#x5165;&#x5230; DreamBox &#x4E2D;&#xFF0C;&#x6BD4;&#x5982;&#x767B;&#x5F55;&#x767B;&#x51FA;&#x65F6;&#xFF0C;&#x6216;&#x8005;&#x65AD;&#x7F51;&#x6062;&#x590D;&#x65F6;&#x7B49;&#x573A;&#x666F;&#x3002;&#x800C;&#x5728; dbView &#x5185;&#x90E8;&#xFF0C;&#x5219; <code>pool</code> &#x4F5C;&#x4E3A;&#x7279;&#x6B8A;&#x5173;&#x952E;&#x503C;&#x5B58;&#x653E;&#x5728;&#x6BCF;&#x4E2A; dbView &#x7684; <code>meta</code> &#x6570;&#x636E;&#x6C60;&#x4E2D;&#xFF0C;&#x60F3;&#x83B7;&#x53D6;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>${pool.login}</code>&#x3002;&#xFF08; <code>pool</code> &#x4EC5;&#x652F;&#x6301;&#x8BBE;&#x7F6E;&#x4E00;&#x5C42;&#x8282;&#x70B9; &#xFF09;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// java</span>
+DreamBox.getInstance().putPoolData(<span class="hljs-string">&quot;accessKey&quot;</span>, <span class="hljs-string">&quot;login&quot;</span>, <span class="hljs-string">&quot;loginId&quot;</span>);
+</code></pre>
+<pre><code class="lang-Objc"><span class="hljs-comment">// Objc</span>
+[[DBPool shareDBPool] setObject:dict ToDBGlobalPoolWithAccessKey:<span class="hljs-string">@&quot;accessKey&quot;</span>];
+</code></pre>
+<h3 id="3&#x6A21;&#x677F;&#x6570;&#x636E;ext">3.&#x6A21;&#x677F;&#x6570;&#x636E;ext</h3>
+<p>&#x8BD5;&#x60F3;&#x4E00;&#x79CD;&#x573A;&#x666F;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x540C;&#x5728;&#x505A;&#x9875;&#x9762;&#x7684;&#x4F18;&#x5316;&#x8FED;&#x4EE3;&#xFF0C;&#x6BD4;&#x5982;&#x5347;&#x7EA7;&#x4E3A;<code>RN</code>&#x3001;<code>Flutter</code>&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x60C5;&#x51B5;&#x4E0B;&#x53EA;&#x9700;&#x8981;&#x7AEF;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x53D8;&#x66F4;&#xFF0C;&#x800C;&#x4E0E; api &#x7684;&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x6539;&#x52A8;&#x7684;&#x3002;</p>
+<p>&#x540C;&#x6837;&#x5728; DreamBox &#x7684;&#x4F7F;&#x7528;&#x4E2D;&#x3002;&#x56E0;&#x4E3A; DreamBox &#x76F8;&#x5BF9;&#x7075;&#x6D3B;&#xFF0C;&#x6240;&#x4EE5;&#x5C0F;&#x5230;&#x4E00;&#x4E2A;&#x5361;&#x7247;&#x4E5F;&#x53EF;&#x4F7F;&#x7528; DreamBox &#x66FF;&#x6362;&#x3002; &#x800C;&#x5361;&#x7247;&#x6570;&#x636E;&#x662F;&#x4ECE; api &#x7684;&#x4E0B;&#x53D1;&#x7ED3;&#x6784;&#x4E2D;&#x83B7;&#x53D6;&#x7684;&#x3002;&#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x65B0;&#x52A8;&#x6001;&#x9875;&#x9762;&#x7684;&#x72EC;&#x7ACB;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x65B0;&#x63A5;&#x53E3;&#xFF0C;&#x4F46;&#x82E5;&#x771F;&#x7684;&#x53BB;&#x65B0;&#x5EFA;&#x63A5;&#x53E3;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x63A5;&#x53E3;&#x5197;&#x4F59;&#x800C;&#x4E14;&#x6210;&#x672C;&#x8FC7;&#x9AD8;&#x3002;&#x5176;&#x5B9E;&#x5BF9;&#x4E8E;&#x8FD9;&#x79CD;&#x573A;&#x666F;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5C06;&#x6570;&#x636E;&#x6CE8;&#x5165;&#x5230;&#x65B0;&#x7684; dbView &#x5373;&#x53EF;&#x3002;<code>ext</code> &#x7684;&#x6982;&#x5FF5;&#x4FBF;&#x662F;&#x4E3A;&#x6B64;&#x800C;&#x751F;&#x3002;</p>
+<p><code>ext</code> &#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4EFB;&#x610F;&#x7684; <code>JsonObject</code> &#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5728;db&#x6E32;&#x67D3;&#x65F6;&#x4F20;&#x5165;&#xFF0C;&#x8FD9;&#x6837;&#x5728;db&#x4E2D;&#x4FBF;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#xFF0C;&#x901A;&#x8FC7; <code>${ext.name}</code>&#x3002;</p>
+<pre><code class="lang-objc"><span class="hljs-built_in">NSDictionary</span> *ext;
+[DBTreeView loadWithTemplateId:tid accessKey:kAccesskey extData:ext completionBlock:^(<span class="hljs-built_in">BOOL</span> successed, <span class="hljs-built_in">NSError</span> * _Nullable error) {
+
+}];
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">// DreamBoxView</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">render</span><span class="hljs-params">(String accessKey, String templateId, String extJsonStr)</span></span>{}
+</code></pre>
+<p>&#x4F46;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;<code>ext</code> &#x4E0E; <code>pool</code> &#x4E0D;&#x540C;&#xFF0C;<code>ext</code> &#x662F;&#x4E0E;&#x9875;&#x9762;&#x76F8;&#x5173;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A; dbView &#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x6E32;&#x67D3;&#x65F6;&#x4F20;&#x5165; <code>ext</code> &#x6570;&#x636E;&#xFF0C;&#x800C; <code>pool</code> &#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x6570;&#x636E;&#xFF0C;&#x662F;&#x6240;&#x6709; dbView &#x90FD;&#x80FD;&#x83B7;&#x53D6;&#x7684;&#x3002;</p>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>&#x6BCF;&#x4E2A;app&#x53EF;&#x4EE5;&#x62E5;&#x6709;N&#x4E2A;AccessKey&#xFF0C;&#x6BCF;&#x4E2A;AccessKey&#x53EF;&#x4EE5;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x4E1A;&#x52A1;&#x7EBF;&#xFF0C;&#x5728;&#x6BCF;&#x4E2A;AccessKey&#x5185;&#x90E8;&#x7684;<code>pool</code>&#x548C;<code>meta</code>&#x7684;&#x5173;&#x7CFB;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;&#x6BCF;&#x4E2A;Meta&#x5185;&#x90E8;&#x542B;&#x6709;<code>ext</code>&#x6570;&#x636E;&#xFF0C;&#x7528;&#x4E8E;&#x989D;&#x5916;&#x7684;&#x6570;&#x636E;&#x8F93;&#x5165;</p>
+<p><img src="https://static.didialift.com/pinche/gift/resource/31qo3ucvdb8-1601277854196-DataPool_app.png" alt="&#x591A;&#x4E2A;accessKey&#x8868;&#x73B0;"></p>
+<h3 id="&#x6570;&#x636E;&#x7684;&#x63A5;&#x5165;&#x5B9E;&#x8DF5;">&#x6570;&#x636E;&#x7684;&#x63A5;&#x5165;&#x5B9E;&#x8DF5;</h3>
+<p>&#x5982;&#x679C;&#x4E86;&#x89E3;&#x4E86; <code>ext</code> &#x7684;&#x4EA7;&#x751F;&#x80CC;&#x666F;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x5F88;&#x81EA;&#x7136;&#x60F3;&#x5230;&#x4E00;&#x79CD;&#x573A;&#x666F;: &#x5BA2;&#x6237;&#x7AEF;&#x4E0E; api &#x534F;&#x8BAE;&#x5546;&#x91CF;&#x597D;&#xFF0C;&#x4F46;&#x662F;&#x7248;&#x672C;&#x8FED;&#x4EE3;&#x8FC7;&#x7A0B;&#x9700;&#x6C42;&#x6709;&#x53D8;&#x5316;&#xFF0C;&#x6BD4;&#x5982;&#x65B0;&#x589E;&#x6807;&#x8BC6;&#x6216;&#x66F4;&#x6539;&#x9875;&#x9762;&#x5C55;&#x793A;&#x3002;&#x4F46;&#x54EA;&#x6015;&#x53EA;&#x662F;&#x5C0F;&#x7684;&#x6539;&#x52A8;&#xFF0C;&#x6D89;&#x53CA;&#x534F;&#x8BAE;&#x53D8;&#x5316;&#xFF0C;&#x4E5F;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x5BA2;&#x6237;&#x7AEF;&#x8FDB;&#x884C;&#x53D1;&#x7248;&#x6765;&#x5904;&#x7406;&#x3002;&#x6240;&#x4EE5;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x5BF9;&#x534F;&#x8BAE;&#x589E;&#x52A0;&#x4FDD;&#x7559;&#x5B57;&#x6BB5;&#x4FBF;&#x662F;&#x4E00;&#x79CD;&#x52A8;&#x6001;&#x5316;&#x7684;&#x624B;&#x6BB5;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x5982;&#x679C; DreamBox &#x76F4;&#x63A5;&#x4E0E; Api &#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x90A3;&#x53CC;&#x65B9;&#x81EA;&#x7136;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x4FEE;&#x6539;&#x534F;&#x8BAE;&#x3002;&#x4F46;&#x5982;&#x679C; DreamBox &#x4F7F;&#x7528;&#x7684;&#x662F;&#x9875;&#x9762;&#x6574;&#x4F53;&#x6570;&#x636E;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5C31;&#x4F1A;&#x7528;&#x5230;&#x63D0;&#x524D;&#x9884;&#x57CB;&#x7684;&#x4FDD;&#x7559;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x589E;&#x52A0;&#x4FDD;&#x7559;&#x5B57;&#x6BB5;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x4E0D;&#x662F; DreamBox &#x4E2D;&#x5305;&#x542B;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x5728;&#x63A5;&#x5165;&#x65F6;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x3002;&#x5728;&#x987A;&#x98CE;&#x8F66;&#x4E1A;&#x52A1;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x540D;&#x79F0;&#x4E3A; <code>dbd</code> &#x7684;&#x5B57;&#x6BB5;&#x4F5C;&#x4E3A;&#x4FDD;&#x7559;&#x5B57;&#x6BB5;&#xFF0C;&#x5728;&#x5E73;&#x65F6;&#x7684;&#x7248;&#x672C;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>dbd</code> &#x5B57;&#x6BB5;&#xFF0C;&#x53EA;&#x8981;&#x4FDD;&#x8BC1;&#x5728;&#x4F20;&#x5165;&#x7684; <code>ext</code> &#x6570;&#x636E;&#x4E2D;&#x53EF;&#x4EE5;&#x5B58;&#x5728; <code>dbd</code> &#x5B57;&#x6BB5;&#x7684;&#x6269;&#x5C55;&#xFF0C;&#x800C;&#x4E00;&#x65E6;&#x6709;&#x9700;&#x6C42;&#x9700;&#x8981;&#x517C;&#x5BB9;&#x65E7;&#x7248;&#x672C;&#xFF0C;&#x4FBF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>dbd</code> &#x5B57;&#x6BB5;&#xFF0C;&#x7136;&#x540E;&#x66F4;&#x65B0;&#x5BF9;&#x5E94;&#x7684; <code>db&#x6A21;&#x677F;</code>&#xFF0C;&#x4EE5;&#x6B64;&#x54CD;&#x5E94;&#x9700;&#x6C42;&#x3002;</p>
+<h3 id="&#x5176;&#x4ED6;">&#x5176;&#x4ED6;</h3>
+<p><a href="TODO%20github%20page">DreamBox&#x5F00;&#x53D1;&#x624B;&#x518C;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="event.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 最佳实践系列-事件管道的应用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"最佳实践系列-数据的复杂用法","level":"1.6.1","depth":2,"next":{"title":"最佳实践系列-事件管道的应用","level":"1.6.2","depth":2,"path":"article/event.md","ref":"article/event.md","articles":[]},"previous":{"title":"相关文章","level":"1.6","depth":1,"ref":"","articles":[{"title":"最佳实践系列-数据的复杂用法","level":"1.6.1","depth":2,"path":"article/meta.md","ref":"article/meta.md","articles":[]},{"title":"最佳实践系列-事件管道的应用","level":"1.6.2","depth":2,"path":"article/event.md","ref":"article/event.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/meta.md","mtime":"2020-11-13T11:50:53.789Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-13T11:51:20.293Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

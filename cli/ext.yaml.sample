@@ -1,9 +1,0 @@
-# ext表示扩展的属性头
-ext:
-  # view_tags跟的是接入方扩展了哪些自己的视图标签
-  view_tags: list, vh, header, footer, flow
-  # view_parent_tags 是接入方扩展了哪些视图容器的视图标签
-  view_parent_tags: list, vh, header, footer, flow
-  # idref_attr_names 指的是接入方自己实现的视图标签中哪些属性的value值是ID，编译器会进行收集后自动替换
-  idref_attr_names: parentId
-  # callback_tags 指的是接入方自己扩展了哪些回调标签，这些标签下的action可能会被自动转换成数组结构以对应RUNTIME的处理

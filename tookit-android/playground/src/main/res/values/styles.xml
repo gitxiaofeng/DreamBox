@@ -1,7 +1,0 @@
-<resources>
-
-    <style name="DBCustomTitleBar" parent="@style/Theme.AppCompat.Light.NoActionBar"></style>
-
-</resources>
-
-

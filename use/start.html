@@ -1,0 +1,1121 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>快速入门 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="playground.html" />
+    
+    
+    <link rel="prev" href="cli/ext.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    DreamBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    接入与调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="environment.html">
+            
+                <a href="environment.html">
+            
+                    
+                    环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    CLI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="cli/">
+            
+                <a href="cli/">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="cli/ext.html">
+            
+                <a href="cli/ext.html">
+            
+                    
+                    扩展配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="start.html">
+            
+                <a href="start.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="playground.html">
+            
+                <a href="playground.html">
+            
+                    
+                    Playground
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="catalog.html">
+            
+                <a href="catalog.html">
+            
+                    
+                    Catalog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="api_doc.html">
+            
+                <a href="api_doc.html">
+            
+                    
+                    API说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="use_wrapper.html">
+            
+                <a href="use_wrapper.html">
+            
+                    
+                    实现自己的wrapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="debug_tool_in_project.html">
+            
+                <a href="debug_tool_in_project.html">
+            
+                    
+                    集成调试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="which_is_dbview.html">
+            
+                <a href="which_is_dbview.html">
+            
+                    
+                    特征识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="publish_recommand.html">
+            
+                <a href="publish_recommand.html">
+            
+                    
+                    发布方案建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../dsl/changelog.html">
+            
+                <a href="../dsl/changelog.html">
+            
+                    
+                    DSL开发手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../dsl/write_a_dsl.html">
+            
+                <a href="../dsl/write_a_dsl.html">
+            
+                    
+                    如何编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../dsl/root.html">
+            
+                <a href="../dsl/root.html">
+            
+                    
+                    根节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../dsl/meta.html">
+            
+                <a href="../dsl/meta.html">
+            
+                    
+                    元数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../dsl/layout_logic.html">
+            
+                <a href="../dsl/layout_logic.html">
+            
+                    
+                    布局逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../dsl/ui/base.html">
+            
+                <a href="../dsl/ui/base.html">
+            
+                    
+                    视图节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../dsl/ui/base.html">
+            
+                <a href="../dsl/ui/base.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../dsl/ui/text.html">
+            
+                <a href="../dsl/ui/text.html">
+            
+                    
+                    文字——text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../dsl/ui/image.html">
+            
+                <a href="../dsl/ui/image.html">
+            
+                    
+                    图片——image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../dsl/ui/view.html">
+            
+                <a href="../dsl/ui/view.html">
+            
+                    
+                    占位——view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../dsl/ui/loading.html">
+            
+                <a href="../dsl/ui/loading.html">
+            
+                    
+                    加载——loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../dsl/ui/progress.html">
+            
+                <a href="../dsl/ui/progress.html">
+            
+                    
+                    进度条——progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../dsl/ui/list.html">
+            
+                <a href="../dsl/ui/list.html">
+            
+                    
+                    列表——list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../dsl/ui/flow.html">
+            
+                <a href="../dsl/ui/flow.html">
+            
+                    
+                    流式布局——flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../dsl/func/base.html">
+            
+                <a href="../dsl/func/base.html">
+            
+                    
+                    动作节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../dsl/func/base.html">
+            
+                <a href="../dsl/func/base.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../dsl/func/log.html">
+            
+                <a href="../dsl/func/log.html">
+            
+                    
+                    日志——log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../dsl/func/net.html">
+            
+                <a href="../dsl/func/net.html">
+            
+                    
+                    网络——net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../dsl/func/trace.html">
+            
+                <a href="../dsl/func/trace.html">
+            
+                    
+                    埋点——trace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../dsl/func/nav.html">
+            
+                <a href="../dsl/func/nav.html">
+            
+                    
+                    跳转——nav
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../dsl/func/storage.html">
+            
+                <a href="../dsl/func/storage.html">
+            
+                    
+                    持久化缓存——storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../dsl/func/changeMeta.html">
+            
+                <a href="../dsl/func/changeMeta.html">
+            
+                    
+                    数据变更——changeMeta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="../dsl/func/dialog.html">
+            
+                <a href="../dsl/func/dialog.html">
+            
+                    
+                    Dialog弹窗——dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="../dsl/func/toast.html">
+            
+                <a href="../dsl/func/toast.html">
+            
+                    
+                    自消失提示——toast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="../dsl/func/actionAlias.html">
+            
+                <a href="../dsl/func/actionAlias.html">
+            
+                    
+                    动作领域——actionAlias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.11" data-path="../dsl/func/invoke.html">
+            
+                <a href="../dsl/func/invoke.html">
+            
+                    
+                    执行动作——invoke
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.12" data-path="../dsl/func/closePage.html">
+            
+                <a href="../dsl/func/closePage.html">
+            
+                    
+                    关闭页面——closePage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../extension/">
+            
+                <a href="../extension/">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../extension/event/event_pipe.html">
+            
+                <a href="../extension/event/event_pipe.html">
+            
+                    
+                    事件管道
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../extension/event/event_android.html">
+            
+                <a href="../extension/event/event_android.html">
+            
+                    
+                    android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../extension/event/event_ios.html">
+            
+                <a href="../extension/event/event_ios.html">
+            
+                    
+                    ios
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../extension/android/create_ui_extension_01.html">
+            
+                <a href="../extension/android/create_ui_extension_01.html">
+            
+                    
+                    扩展UI标签-入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../extension/android/create_ui_extension_02.html">
+            
+                <a href="../extension/android/create_ui_extension_02.html">
+            
+                    
+                    扩展UI标签-进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../extension/android/create_action_extension_01.html">
+            
+                <a href="../extension/android/create_action_extension_01.html">
+            
+                    
+                    扩展动作标签-入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../extension/android/create_action_extension_02.html">
+            
+                <a href="../extension/android/create_action_extension_02.html">
+            
+                    
+                    扩展动作标签-进阶篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    ios
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../extension/ios/ios_ui_extension.html">
+            
+                <a href="../extension/ios/ios_ui_extension.html">
+            
+                    
+                    扩展UI标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../extension/ios/ios_action_extension.html">
+            
+                <a href="../extension/ios/ios_action_extension.html">
+            
+                    
+                    扩展动作标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../extension/use_extension.md">
+            
+                <span>
+            
+                    
+                    使用已有扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    工作原理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../design/base.html">
+            
+                <a href="../design/base.html">
+            
+                    
+                    设计理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../design/data.html">
+            
+                <a href="../design/data.html">
+            
+                    
+                    数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../design/cli.html">
+            
+                <a href="../design/cli.html">
+            
+                    
+                    编译逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../article/meta.html">
+            
+                <a href="../article/meta.html">
+            
+                    
+                    最佳实践系列-数据的复杂用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../article/event.html">
+            
+                <a href="../article/event.html">
+            
+                    
+                    最佳实践系列-事件管道的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../feedback.html">
+            
+                <a href="../feedback.html">
+            
+                    
+                    反馈渠道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >快速入门</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5FEB;&#x901F;&#x5165;&#x95E8;">&#x5FEB;&#x901F;&#x5165;&#x95E8;</h2>
+<p>&#x63A5;&#x5165;&#x65B9;&#x5728;&#x96C6;&#x6210;&#x540E;&#xFF0C;&#x5982;&#x4F55;&#x4F7F;&#x7528;DreamBox Runtime&#x6765;&#x8FBE;&#x6210;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x5316;&#x5E03;&#x5C40;</p>
+<h3 id="&#x5D4C;&#x5165;">&#x5D4C;&#x5165;</h3>
+<p>&#x5728;&#x539F;&#x751F;&#x5E03;&#x5C40;&#x4E2D;&#x5D4C;&#x5165;DBView&#xFF08;DBView&#x4E3A;&#x4EE3;&#x6307;&#x7528;&#x540D;&#xFF0C;&#x5177;&#x4F53;&#x7C7B;&#x540D;&#x4EE5;SDK&#x5B9E;&#x73B0;&#x4E3A;&#x51C6;&#xFF09;&#xFF0C;&#x5D4C;&#x5165;&#x65B9;&#x5F0F;&#x53C2;&#x8003;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../assets/use_db_in_native.png" alt=""></p>
+<ul>
+<li>&#x65B9;&#x5F0F;A&#x3002;&#x5C06;DBView&#x906E;&#x7F69;&#x4E8E;&#x539F;&#x751F;View&#x4E0A;&#xFF0C;&#x5F53;&#x5DF2;&#x53D1;&#x7248;&#x7684;&#x539F;&#x751F;&#x89C6;&#x56FE;&#x5DF2;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x65B0;&#x9700;&#x6C42;&#x65F6;&#xFF0C;&#x9884;&#x7F6E;DBView&#x53EF;&#x76F4;&#x63A5;&#x63A5;&#x7BA1;&#xFF0C;&#x5728;&#x7EBF;&#x751F;&#x6548;&#x65B0;&#x9700;&#x6C42;</li>
+<li>&#x65B9;&#x5F0F;B&#x3002;&#x968F;&#x7248;&#x672C;&#x76F4;&#x63A5;&#x5185;&#x7F6E;DBView&#x53CA;&#x6E32;&#x67D3;&#x6A21;&#x677F;&#x6570;&#x636E;&#xFF0C;&#x5F53;&#x6709;&#x65B0;&#x9700;&#x6C42;&#x53D8;&#x5316;&#x65F6;&#x53EF;&#x5728;&#x7EBF;&#x8986;&#x76D6;&#x6A21;&#x677F;&#x6570;&#x636E;&#x5373;&#x65F6;&#x751F;&#x6548;</li>
+</ul>
+<h3 id="&#x7F16;&#x8F91;&#x6A21;&#x677F;">&#x7F16;&#x8F91;&#x6A21;&#x677F;</h3>
+<pre><code class="lang-xml">//TODO dbl&#x5F85;&#x786E;&#x5B9A;&#x7F51;&#x5740;
+<span class="hljs-tag">&lt;<span class="hljs-name">dbl</span> <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="hljs-attr">xsi:noNamespaceSchemaLocation</span>=<span class="hljs-string">&quot;=/dreambox/dbl&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">render</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">text</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;Hello DreamBox!&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">render</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dbl</span>&gt;</span>
+</code></pre>
+<p>&#x7ECF;&#x8FC7;&#x7F16;&#x8BD1;&#x5668;&#x7F16;&#x8BD1;&#x540E;&#x4EA7;&#x751F;&#xFF1A;</p>
+<pre><code>db806418fdb1cbab87eff1954afc3add000100000000000000000000ewogImRibCI6IHsKICAicmVuZGVyIjogWwogICB7CiAgICAic3JjIjogIkhlbGxvIERyZWFtQm94ISIsCiAgICAidHlwZSI6ICJ0ZXh0IgogICB9CiAgXQogfQp9
+</code></pre><h3 id="&#x5185;&#x7F6E;&#x6A21;&#x677F;">&#x5185;&#x7F6E;&#x6A21;&#x677F;</h3>
+<p>&#x521B;&#x5EFA;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x5C06;&#x7F16;&#x8BD1;&#x540E;&#x5B57;&#x7B26;&#x4E32;&#x7C98;&#x8D34;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x5E76;&#x4FDD;&#x5B58;&#xFF0C;&#x547D;&#x540D;&#x4E3A;<code>local.hellodb.dbt</code>&#x3002;&#x5C06;&#x6B64;&#x6587;&#x4EF6;&#x5185;&#x7F6E;&#x4E8E;App&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;</p>
+<h5 id="android&#x6587;&#x4EF6;&#x653E;&#x7F6E;">Android&#x6587;&#x4EF6;&#x653E;&#x7F6E;</h5>
+<p>&#x5B58;&#x653E;&#x5728;&#x5E94;&#x7528; assets &#x76EE;&#x5F55;&#x4E0B;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;&#x6A21;&#x677F;&#x4E3A; <code>hello</code> &#xFF0C;&#x547D;&#x540D;&#x4E3A; <code>local.hello.dbt</code> &#x6587;&#x4EF6;&#x5373;&#x53EF;&#xFF0C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4E3A; cli &#x7F16;&#x8BD1;&#x51FA;&#x7684;&#x6700;&#x7EC8;&#x6570;&#x636E;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x5B58;&#x653E;&#x4F4D;&#x7F6E;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;<code>wrapper</code>&#x7AE0;&#x8282;&#xFF0C;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x677F;&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#x3002;</p>
+<h5 id="ios&#x6587;&#x4EF6;&#x653E;&#x7F6E;">iOS&#x6587;&#x4EF6;&#x653E;&#x7F6E;</h5>
+<p>&#x5982;&#x679C;&#x4F60;&#x662F;&#x5728;mainBundle&#x4E0B;&#x653E;&#x7F6E;&#xFF0C;&#x76F4;&#x63A5;&#x62D6;&#x62FD;&#x6587;&#x4EF6;&#x5373;&#x53EF;&#x3002;&#x5982;&#x679C;&#x975E;mainBundle&#x4E0B;&#x653E;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x4E3A;&#x4F60;&#x6CE8;&#x518C;&#x7684;wrapper&#x8BBE;&#x7F6E;bundle&#x548C;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x8DEF;&#x5F84;&#xFF0C;&#x8BA9;wrapper&#x80FD;&#x627E;&#x5230;&#x672C;&#x5730;&#x6A21;&#x677F;</p>
+<pre><code>    wrapper.bundle = XXBundle;
+    wrapper.directoryPath = @&quot;XX/DreamBoxTemplate&quot;;
+</code></pre><h3 id="coding">Coding</h3>
+<p>&#x5728;&#x539F;&#x751F;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x83B7;&#x53D6;&#x5230;&#x5D4C;&#x5165;&#x7684;DBView&#x5B9E;&#x4F8B;&#x540E;&#xFF0C;&#x8C03;&#x7528;DBView&#x7684;&#x6E32;&#x67D3;&#x63A5;&#x53E3;&#xFF0C;<code>template_id</code>&#x53C2;&#x6570;&#x4F20;&#x5165;<code>hellodb</code>&#x3002;&#x8FD0;&#x884C;&#x67E5;&#x770B;&#x6548;&#x679C;&#x3002;</p>
+<h3 id="&#x6548;&#x679C;">&#x6548;&#x679C;</h3>
+<p>&#x5D4C;&#x5165;DBView&#x7684;&#x4F4D;&#x7F6E;&#x4E0A;&#x5C55;&#x793A;&#x4E86;<code>Hello DreamBox!</code>&#x7684;&#x6587;&#x5B57;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cli/ext.html" class="navigation navigation-prev " aria-label="Previous page: 扩展配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="playground.html" class="navigation navigation-next " aria-label="Next page: Playground">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"快速入门","level":"1.2.3","depth":2,"next":{"title":"Playground","level":"1.2.4","depth":2,"path":"use/playground.md","ref":"use/playground.md","articles":[]},"previous":{"title":"扩展配置","level":"1.2.2.2","depth":3,"path":"use/cli/ext.md","ref":"use/cli/ext.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"use/start.md","mtime":"2020-11-13T11:50:53.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-13T11:51:20.293Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
