@@ -17,6 +17,7 @@ setup(
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
     install_requires=['lxml', 'watchdog', 'websockets', 'jinja2', 'qrcode', 'Pillow', 'importlib-resources',
