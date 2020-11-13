@@ -1,7 +1,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## 简介
-<img style="zoom:70%" src="docs/assets/ic_dreambox.jpg">
+<img src="docs/assets/ic_dreambox.jpg" width="150">
 <br>
 这是一个为客户端打造的、具有动态化功能、性能优秀的统一视图开发框架——`One DSL, Both run`
 
@@ -106,7 +106,7 @@
 
 > QQ群
 
-<img style="zoom:25%" src="docs/assets/db_qq_qrcode.png">
+<img src="docs/assets/db_qq_qrcode.png" width="220">
 
 ## License
 
