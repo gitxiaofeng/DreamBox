@@ -1120,13 +1120,21 @@
 [[DBFactory sharedInstance] registModelClass:[DBTestExtensionModel class] byType:@&quot;extensionTestView&quot;];
 </code></pre><h3 id="4-&#x7F16;&#x5199;dsl">4. &#x7F16;&#x5199;dsl</h3>
 <p>&#x4E0A;&#x8FF0;&#x64CD;&#x4F5C;&#x5411;Dream Box&#x6CE8;&#x518C;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>extensionTestView</code>&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x81F3;&#x6B64;&#x7F16;&#x5199;dsl&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E86;</p>
-<pre><code>&lt;dbl&gt;
-    &lt;render&gt;
-        &lt;extensionTestView id=&quot;1&quot; testString=&quot;I am test string&quot; leftToLeft=&quot;parent&quot; topToTop=&quot;parent&quot; width=&quot;300dp&quot; height=&quot;40dp&quot; marginTop=&quot;50dp&quot; marginLeft=&quot;50dp&quot;&gt;
-        &lt;/extensionTestView&gt;
-    &lt;/render&gt;
-&lt;/dbl&gt;
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dbl</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">render</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">extensionTestView</span>
+            <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;1&quot;</span>
+            <span class="hljs-attr">testString</span>=<span class="hljs-string">&quot;I am test string&quot;</span>
+            <span class="hljs-attr">leftToLeft</span>=<span class="hljs-string">&quot;parent&quot;</span>
+            <span class="hljs-attr">topToTop</span>=<span class="hljs-string">&quot;parent&quot;</span>
+            <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300dp&quot;</span>
+            <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;40dp&quot;</span>
+            <span class="hljs-attr">marginTop</span>=<span class="hljs-string">&quot;50dp&quot;</span>
+            <span class="hljs-attr">marginLeft</span>=<span class="hljs-string">&quot;50dp&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">render</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dbl</span>&gt;</span>
 </code></pre>
+
                                 
                                 </section>
                             
@@ -1165,7 +1173,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"扩展UI标签","level":"1.3.11.2.2.1","depth":5,"next":{"title":"扩展动作标签","level":"1.3.11.2.2.2","depth":5,"path":"extension/ios/ios_action_extension.md","ref":"extension/ios/ios_action_extension.md","articles":[]},"previous":{"title":"ios","level":"1.3.11.2.2","depth":4,"ref":"","articles":[{"title":"扩展UI标签","level":"1.3.11.2.2.1","depth":5,"path":"extension/ios/ios_ui_extension.md","ref":"extension/ios/ios_ui_extension.md","articles":[]},{"title":"扩展动作标签","level":"1.3.11.2.2.2","depth":5,"path":"extension/ios/ios_action_extension.md","ref":"extension/ios/ios_action_extension.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"extension/ios/ios_ui_extension.md","mtime":"2020-11-30T12:28:09.516Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-30T12:28:36.795Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"扩展UI标签","level":"1.3.11.2.2.1","depth":5,"next":{"title":"扩展动作标签","level":"1.3.11.2.2.2","depth":5,"path":"extension/ios/ios_action_extension.md","ref":"extension/ios/ios_action_extension.md","articles":[]},"previous":{"title":"ios","level":"1.3.11.2.2","depth":4,"ref":"","articles":[{"title":"扩展UI标签","level":"1.3.11.2.2.1","depth":5,"path":"extension/ios/ios_ui_extension.md","ref":"extension/ios/ios_ui_extension.md","articles":[]},{"title":"扩展动作标签","level":"1.3.11.2.2.2","depth":5,"path":"extension/ios/ios_action_extension.md","ref":"extension/ios/ios_action_extension.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"extension/ios/ios_ui_extension.md","mtime":"2020-12-01T10:42:31.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T10:42:54.883Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
